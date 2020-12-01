@@ -1,0 +1,20 @@
+.card {
+  padding: 1rem;
+  &__header {
+  }
+  &__body {
+    padding: 1rem 0 0 0;
+    .title {
+      font-size: $h5;
+      font-weight: bold;
+      margin: 1rem 0;
+      line-height: 1.1;
+    }
+    .description {
+      margin-bottom: 1.25rem;
+    }
+  }
+  @media (min-width: $md) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,46 @@
+.masthead {
+  position: relative;
+  &__image {
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+  }
+  &__overlay {
+    padding: 2rem 1rem;
+    background: $primary500;
+    h1 {
+      font-size: $h4;
+      color: white;
+      max-width: 25ch;
+    }
+    .button {
+      background: white;
+      color: $primary500;
+      margin-top: 1rem;
+    }
+    @media (min-width: $xs) {
+      background: hsla(0, 100%, 100%, 0.8);
+      padding: 3rem;
+      width: max-content;
+      position: absolute;
+      bottom: 3rem;
+      left: 0;
+      h1 {
+        font-size: $h3;
+        color: $primary900;
+      }
+      .button {
+        color: white;
+        background: $primary500;
+        &:hover {
+          background: $primary300;
+        }
+      }
+    }
+    @media (min-width: $lg) {
+    }
+  }
+  @media (min-width: $xs) {
+    height: clamp(450px, 50vh, 600px);
+  }
+}

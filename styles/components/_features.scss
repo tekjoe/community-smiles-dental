@@ -1,0 +1,35 @@
+.features {
+  background: white;
+  padding: 1rem 0;
+  .feature {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__image {
+      height: 96px;
+      width: 96px;
+    }
+    &__title {
+      font-size: $h4;
+      font-weight: bold;
+      line-height: 1.1;
+    }
+    &__description {
+      margin-bottom: 0;
+      max-width: 40ch;
+    }
+    @media (min-width: $md) {
+      &__image {
+        height: 160px;
+        width: 160px;
+      }
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+  @media (min-width: $sm) {
+    padding: 3rem;
+  }
+}

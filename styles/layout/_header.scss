@@ -1,0 +1,134 @@
+.header {
+  background: $primary500;
+  color: white;
+  &__top {
+    display: none;
+    .left {
+      background: hsl(243, 31%, 52%);
+      flex: 1;
+      padding: 1rem 2rem;
+      .tagline {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+    }
+    .right {
+      margin-left: auto;
+      .donate {
+        background: hsl(247, 31%, 63%);
+        padding: 1rem 4rem;
+        height: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease-in-out;
+        &:hover {
+          background: hsl(247, 31%, 33%);
+        }
+      }
+    }
+    @media (min-width: $sm) {
+      display: flex;
+    }
+  }
+  &__desktop {
+    display: none;
+    padding: 2rem;
+    align-items: center;
+    @media (min-width: $sm) {
+      display: flex;
+      .logo {
+        img {
+          height: 4rem;
+        }
+      }
+    }
+    @media (min-width: $md) {
+      .logo {
+        img {
+          height: 6rem;
+        }
+      }
+    }
+  }
+  &__mobile {
+  }
+  &__nav {
+    margin-left: auto;
+  }
+
+  // Navigation Menu
+  .nav__links {
+    list-style-type: none;
+    display: flex;
+    .menu-item {
+      position: relative;
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: $h6;
+      }
+      // Show Drop Down Menu
+      &:hover .sub-menu {
+        display: flex;
+      }
+      // Drop Down Menu
+      .sub-menu {
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        background-image: linear-gradient(
+          to top,
+          hsl(247, 31%, 63%) calc(100% - 24px),
+          transparent 10%
+        );
+        position: absolute;
+        z-index: 10;
+        min-width: 100%;
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
+        top: 1.5rem;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          border-top: 12px solid transparent;
+          border-bottom: 12px solid hsl(247, 31%, 63%);
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          top: 0;
+        }
+        .menu-item {
+          margin-right: 0;
+          margin-bottom: 0.5rem;
+          &:first-of-type {
+            margin-top: 0.5rem;
+          }
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          a {
+            color: white;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $md) {
+    .nav__links {
+      .menu-item {
+        a {
+          font-size: 1.25rem;
+        }
+      }
+      .menu-item:not(:last-of-type) {
+        margin-right: 1.125rem;
+      }
+    }
+  }
+}

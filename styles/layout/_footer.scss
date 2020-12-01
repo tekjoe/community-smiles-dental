@@ -1,0 +1,60 @@
+.footer {
+  background: $primary500;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  @media (min-width: $sm) {
+    padding: 3rem 2rem;
+    align-items: center;
+  }
+  @media (min-width: $md) {
+    padding: 3rem 4rem;
+  }
+  &__locations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .location {
+      text-align: center;
+      margin-bottom: 2rem;
+      &__title {
+        font-weight: bold;
+      }
+      &__address {
+        span {
+          display: block;
+        }
+      }
+    }
+    @media (min-width: $sm) {
+      flex-direction: row;
+      .location {
+        &:not(:last-of-type) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+  &__nav {
+    .nav__links {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      list-style-type: none;
+      flex-wrap: wrap;
+      li {
+        margin-bottom: 0.5rem;
+        &:not(:last-of-type) {
+          margin-right: 1rem;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: $h6;
+        }
+      }
+    }
+  }
+}

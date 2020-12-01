@@ -1,0 +1,7 @@
+.blog-grid {
+  background: white;
+  padding: 1rem;
+  @media (min-width: $lg) {
+    padding: 3rem;
+  }
+}

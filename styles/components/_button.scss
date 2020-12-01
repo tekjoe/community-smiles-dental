@@ -1,0 +1,19 @@
+.button {
+  background: $primary500;
+  display: inline-block;
+  color: white;
+  min-width: 200px;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  &:hover {
+    background: $primary300;
+  }
+}
+
+button.button {
+  border: none;
+  cursor: pointer;
+}

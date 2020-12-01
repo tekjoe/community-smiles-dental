@@ -1,0 +1,97 @@
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: $xs) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .eligibility,
+  .donate {
+    padding: 2rem 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3,
+    p {
+      margin-bottom: 1.125rem;
+    }
+    @media (min-width: $xs) {
+      grid-column: 1 / span 6;
+      padding: 3rem;
+    }
+  }
+  .eligibility {
+    background: hsl(247, 31%, 63%);
+    @media (min-width: $xs) {
+      grid-row: 1/2;
+    }
+  }
+  .donate {
+    background: hsl(243, 31%, 52%);
+    @media (min-width: $xs) {
+      grid-row: 2/-1;
+    }
+  }
+  .image {
+    display: none;
+    @media (min-width: $xs) {
+      display: block;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+      grid-column: 7 / -1;
+      grid-row: 1/-1;
+    }
+  }
+}
+
+// Separate into _input.scss
+.input-group {
+  display: flex;
+  flex-direction: column;
+  .input-group__input {
+    padding: 1rem;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+  .input-group__button {
+    border: none;
+    border-radius: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 1rem 2rem;
+    background: white;
+    color: hsl(243, 31%, 52%);
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  @media (min-width: $md) {
+    flex-direction: row;
+    .input-group__input {
+      margin-bottom: 0;
+      border-left: 2px solid white;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      border-right: none;
+      flex: 2;
+    }
+    .input-group__button {
+      padding: 0.5rem 2rem;
+      flex: 1;
+    }
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: bold;
+}

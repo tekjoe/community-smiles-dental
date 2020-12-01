@@ -1,0 +1,49 @@
+.social-share {
+  .title {
+    font-style: italic;
+    font-size: 1.125rem;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  .social-list {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 2rem;
+    li {
+      &:not(:last-of-type) {
+        margin-right: 0.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        text-align: center;
+        background: white;
+        border: 1px solid $primary900;
+      }
+    }
+    @media (min-width: $sm) {
+      flex-direction: column;
+      li {
+        &:not(:last-of-type) {
+          margin-bottom: 1rem;
+        }
+        a {
+          min-width: 10rem;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+  @media (min-width: $sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .title {
+      margin-right: 2rem;
+    }
+  }
+}

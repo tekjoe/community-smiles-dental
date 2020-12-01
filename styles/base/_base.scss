@@ -1,0 +1,14 @@
+@import "./variables";
+@import "./colors";
+@import "./typography";
+@import "./reset";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #edf2f7;
+  font-family: $font-family;
+  color: $primary900;
+}

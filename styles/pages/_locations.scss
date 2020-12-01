@@ -1,0 +1,71 @@
+.locations {
+  background: white;
+  padding: 2rem 1rem;
+  @media (min-width: $xs) {
+    padding: 3rem 2rem;
+  }
+  @media (min-width: $sm) {
+  }
+  .map {
+  }
+  #map {
+    height: 225px;
+    @media (min-width: $xs) {
+      height: 325px;
+    }
+    @media (min-width: $lg) {
+      height: 400px;
+    }
+  }
+}
+
+.schedule {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  &__title {
+    flex: 1;
+    flex-basis: 100%;
+    display: block;
+    font-size: $h4;
+    margin-bottom: 1rem;
+  }
+  .days,
+  .hours {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    span {
+      display: block;
+    }
+  }
+  .days {
+  }
+  .hours {
+  }
+}
+
+.location {
+  margin-bottom: 2rem;
+  &__image {
+    margin-bottom: 1rem;
+    img {
+      height: 225px;
+      object-fit: cover;
+      @media (min-width: $md) {
+        height: 300px;
+      }
+    }
+  }
+  &__title {
+    font-size: $h4;
+    font-weight: bold;
+  }
+  &__address {
+    span {
+      display: block;
+      font-size: $h6;
+    }
+    margin-bottom: 1rem;
+  }
+}
