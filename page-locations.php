@@ -6,7 +6,7 @@
         src="<?php echo get_template_directory_uri() . '/images/';?>about-masthead.png"
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
-        <h1><?php echo get_the_title(); ?></h1>
+        <h1 class="title"><?php echo get_the_title(); ?></h1>
       </div>
     </div>
   </div>

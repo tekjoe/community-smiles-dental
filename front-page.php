@@ -6,7 +6,8 @@
         src="<?php echo get_template_directory_uri() . '/images/';?>smiling-kid.png"
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
-        <h1>Intro headline or key message should go here like this</h1>
+        <h1 class="title">Community Smiles Dental</h1>
+        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
         <a href="/" class="button button--primary">Learn More</a>
       </div>
     </div>

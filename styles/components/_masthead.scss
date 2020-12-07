@@ -8,10 +8,15 @@
   &__overlay {
     padding: 2rem 1rem;
     background: $primary500;
-    h1 {
+    .title {
       font-size: $h4;
       color: white;
       max-width: 25ch;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: white;
+      margin-bottom: 0;
     }
     .button {
       background: white;
@@ -25,8 +30,12 @@
       position: absolute;
       bottom: 3rem;
       left: 0;
-      h1 {
+      .title {
         font-size: $h3;
+        color: $primary900;
+      }
+      .subtitle {
+        max-width: 35ch;
         color: $primary900;
       }
       .button {
