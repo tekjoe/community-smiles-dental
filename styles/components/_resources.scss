@@ -1,0 +1,29 @@
+.resources {
+  background: $neutral300;
+  padding: 1rem;
+  margin: 2rem 0;
+  &__title {
+    font-style: italic;
+    font-size: 1.125rem;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  @media (min-width: $sm) {
+  }
+  ul {
+    list-style-position: inside;
+  }
+  @media (min-width: $xs) {
+    margin: 0;
+    &__list {
+      li {
+        font-size: $h6;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

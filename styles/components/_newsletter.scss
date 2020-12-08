@@ -19,3 +19,61 @@
     }
   }
 }
+
+.ctct-form-wrapper {
+  form.ctct-form {
+    display: flex;
+    flex-direction: column;
+    p.ctct-form-field {
+      margin: 0;
+      input.ctct-email {
+        width: 100%;
+        padding: 1rem;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 2px solid white;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    p.ctct-form-field-submit {
+      input.ctct-submit {
+        width: 100%;
+        border: none;
+        border-radius: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 1rem 2rem;
+        background: white;
+        color: hsl(243, 31%, 52%);
+        font-family: inherit;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  @media (min-width: $md) {
+    form.ctct-form {
+      flex-direction: row;
+      p.ctct-form-field {
+        flex: 2;
+        input.ctct-email {
+          margin-bottom: 0;
+          border-left: 2px solid white;
+          border-top: 2px solid white;
+          border-bottom: 2px solid white;
+          border-right: none;
+        }
+      }
+      p.ctct-form-field-submit {
+        flex: 1;
+        input.ctct-submit {
+          height: 100%;
+          padding: 0.5rem 2rem;
+        }
+      }
+    }
+  }
+}
