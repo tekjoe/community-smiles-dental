@@ -1,0 +1,43 @@
+.programs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: white;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  &__title {
+    grid-column: 1/-1;
+    text-align: center;
+    color: $primary500;
+    margin-bottom: 2rem;
+    h3 {
+      font-size: $h4;
+    }
+  }
+  @media (min-width: $xs) {
+    padding: 4rem 2rem;
+    &__title h3 {
+      font-size: $h3;
+    }
+  }
+}
+
+.program {
+  grid-column: 1/-1;
+  background: $neutral300;
+  &__body {
+    padding: 1rem;
+    .title {
+      font-size: $h5;
+      margin-bottom: 1rem;
+    }
+  }
+  @media (min-width: $xs) {
+    &__body {
+      padding: 2rem;
+      .title {
+        font-size: $h4;
+      }
+    }
+    grid-column: span 6;
+  }
+}

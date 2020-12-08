@@ -2,7 +2,7 @@
   background: white;
   padding: 3rem 1rem;
   &:first-of-type {
-    padding: 4rem 1rem;
+    padding-top: 5rem;
   }
   display: grid;
   gap: 2rem 1rem;
@@ -12,14 +12,21 @@
     text-align: center;
     color: $primary500;
     margin-bottom: 2rem;
+    h2 {
+      font-size: $h4;
+    }
   }
   @media (min-width: $xs) {
+    padding: 4rem 2rem;
     gap: 3rem 1rem;
     &:first-of-type {
       padding: 5rem 2rem 0 2rem;
     }
     &:last-of-type {
       padding-bottom: 5rem;
+    }
+    &__title h2 {
+      font-size: $h3;
     }
   }
 }
@@ -47,19 +54,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     .name {
-      font-size: $h4;
+      font-size: $h5;
       font-weight: bold;
     }
-    .position {
+    .position,
+    .employer {
       font-style: italic;
     }
-    .contact {
+    .contact,
+    .role {
       font-size: $h6;
       margin-top: 1rem;
     }
+    @media (min-width: $md) {
+      .name {
+        font-size: $h4;
+      }
+    }
   }
   @media (min-width: $xs) {
+    grid-column: span 6;
+  }
+  @media (min-width: $md) {
     grid-column: span 4;
   }
 }

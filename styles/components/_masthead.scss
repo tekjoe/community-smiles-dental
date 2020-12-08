@@ -9,7 +9,7 @@
     padding: 2rem 1rem;
     background: $primary500;
     .title {
-      font-size: $h4;
+      font-size: $h3;
       color: white;
       max-width: 25ch;
       margin-bottom: 0.5rem;
@@ -24,15 +24,14 @@
       margin-top: 1rem;
     }
     @media (min-width: $xs) {
-      background: hsla(0, 100%, 100%, 0.8);
+      background: hsla(0, 100%, 100%, 0.9);
       padding: 3rem;
       width: max-content;
       position: absolute;
       bottom: 3rem;
       left: 0;
       .title {
-        font-size: $h3;
-        color: $primary900;
+        color: $primary700;
       }
       .subtitle {
         max-width: 35ch;
@@ -46,7 +45,10 @@
         }
       }
     }
-    @media (min-width: $lg) {
+    @media (min-width: $md) {
+      .title {
+        font-size: $h2;
+      }
     }
   }
   @media (min-width: $xs) {

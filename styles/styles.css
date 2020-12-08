@@ -394,7 +394,7 @@ body {
 }
 @media (min-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: 860px;
   }
 }
 @media (min-width: 1200px) {
@@ -675,8 +675,8 @@ body {
   background: #46447e;
   display: inline-block;
   color: white;
-  min-width: 200px;
-  padding: 1rem 2rem;
+  min-width: 150px;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -684,6 +684,11 @@ body {
 }
 .button:hover {
   background: #4e5db1;
+}
+@media (min-width: 768px) {
+  .button {
+    padding: 1rem;
+  }
 }
 
 button.button {
@@ -704,7 +709,7 @@ button.button {
   background: #46447e;
 }
 .masthead__overlay .title {
-  font-size: 28.13px;
+  font-size: 35.16px;
   color: white;
   max-width: 25ch;
   margin-bottom: 0.5rem;
@@ -720,7 +725,7 @@ button.button {
 }
 @media (min-width: 768px) {
   .masthead__overlay {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     padding: 3rem;
     width: max-content;
     position: absolute;
@@ -728,8 +733,7 @@ button.button {
     left: 0;
   }
   .masthead__overlay .title {
-    font-size: 35.16px;
-    color: #2c2b3b;
+    color: #4a4365;
   }
   .masthead__overlay .subtitle {
     max-width: 35ch;
@@ -741,6 +745,11 @@ button.button {
   }
   .masthead__overlay .button:hover {
     background: #4e5db1;
+  }
+}
+@media (min-width: 1200px) {
+  .masthead__overlay .title {
+    font-size: 43.95px;
   }
 }
 @media (min-width: 768px) {
@@ -1145,7 +1154,7 @@ div.intro h2 {
   grid-template-columns: repeat(12, 1fr);
 }
 .staff:first-of-type {
-  padding: 4rem 1rem;
+  padding-top: 5rem;
 }
 .staff__title {
   grid-column: 1/-1;
@@ -1153,8 +1162,12 @@ div.intro h2 {
   color: #46447e;
   margin-bottom: 2rem;
 }
+.staff__title h2 {
+  font-size: 28.13px;
+}
 @media (min-width: 768px) {
   .staff {
+    padding: 4rem 2rem;
     gap: 3rem 1rem;
   }
   .staff:first-of-type {
@@ -1162,6 +1175,9 @@ div.intro h2 {
   }
   .staff:last-of-type {
     padding-bottom: 5rem;
+  }
+  .staff__title h2 {
+    font-size: 35.16px;
   }
 }
 
@@ -1189,21 +1205,82 @@ div.intro h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .staff-card__body .name {
-  font-size: 28.13px;
+  font-size: 22.5px;
   font-weight: bold;
 }
-.staff-card__body .position {
+.staff-card__body .position,
+.staff-card__body .employer {
   font-style: italic;
 }
-.staff-card__body .contact {
+.staff-card__body .contact,
+.staff-card__body .role {
   font-size: 18px;
   margin-top: 1rem;
 }
+@media (min-width: 1200px) {
+  .staff-card__body .name {
+    font-size: 28.13px;
+  }
+}
 @media (min-width: 768px) {
   .staff-card {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 1200px) {
+  .staff-card {
     grid-column: span 4;
+  }
+}
+
+.programs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: white;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.programs__title {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #46447e;
+  margin-bottom: 2rem;
+}
+.programs__title h3 {
+  font-size: 28.13px;
+}
+@media (min-width: 768px) {
+  .programs {
+    padding: 4rem 2rem;
+  }
+  .programs__title h3 {
+    font-size: 35.16px;
+  }
+}
+
+.program {
+  grid-column: 1/-1;
+  background: #e2e8f0;
+}
+.program__body {
+  padding: 1rem;
+}
+.program__body .title {
+  font-size: 22.5px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .program {
+    grid-column: span 6;
+  }
+  .program__body {
+    padding: 2rem;
+  }
+  .program__body .title {
+    font-size: 28.13px;
   }
 }
 
