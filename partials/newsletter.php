@@ -7,10 +7,11 @@
           <p>Support statement goes here like this to add more information. Support statement goes here.</p>
         </div>
         <div class="column column--centered">
-          <form class="input-group">
-            <input type="email" class="input-group__input input-group__input--email" placeholder="Email Address" />
-            <button class="input-group__button">Subscribe</button>
-          </form>
+          <?php if (get_field('newsletter_signup', 'option')): ?>
+          <?php echo do_shortcode('[ctct form="'.get_field('newsletter_signup', 'option').'" ]'); ?>
+          <?php else: ?>
+          <span></span>
+          <?php endif; ?>
         </div>
       </div>
     </div>

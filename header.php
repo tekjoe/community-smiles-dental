@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Community Smiles Dental improves the lives of the underserved through oral healthcare services, preventive education, and advocating for systemic healthcare change - Because everyone deserves a healthy smile.">
-  <title>Community Smiles Dental</title>
+  <title><?php the_title(); ?> | Community Smiles Dental</title>
   <?php wp_head(); ?>
 </head>
 
