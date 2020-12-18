@@ -6,7 +6,7 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        <p class="subtitle">We oversee the day-to-day operations of our dental clinics and network of partners.</p>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@
         <div class="staff-card__body">
           <div class="name"><?php the_sub_field('name') ?></div>
           <div class="position"><?php the_sub_field('position') ?></div>
-          <div class="contact"><?php the_sub_field('phone_number') ?></div>
+          <div class="phone"><?php the_sub_field('phone_number') ?></div>
         </div>
       </div>
       <?php endwhile; ?>
@@ -43,7 +43,7 @@
         <div class="staff-card__body">
           <div class="name"><?php the_sub_field('name') ?></div>
           <div class="position"><?php the_sub_field('position') ?></div>
-          <div class="contact"><?php the_sub_field('phone_number') ?></div>
+          <div class="phone"><?php the_sub_field('phone_number') ?></div>
         </div>
       </div>
       <?php endwhile; ?>

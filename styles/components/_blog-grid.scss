@@ -1,7 +1,21 @@
 .blog-grid {
   background: white;
-  padding: 1rem;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  .card {
+    grid-column: 1/-1;
+  }
+  @media (min-width: $xs) {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 2rem;
+    .card {
+      grid-column: span 4;
+    }
+  }
   @media (min-width: $lg) {
     padding: 3rem;
+    gap: 2rem;
   }
 }

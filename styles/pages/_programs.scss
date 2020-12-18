@@ -14,6 +14,7 @@
     }
   }
   @media (min-width: $xs) {
+    gap: 1.5rem;
     padding: 4rem 2rem;
     &__title h3 {
       font-size: $h3;
@@ -24,14 +25,31 @@
 .program {
   grid-column: 1/-1;
   background: $neutral300;
+  &__header {
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+  }
   &__body {
     padding: 1rem;
     .title {
       font-size: $h5;
       margin-bottom: 1rem;
     }
+    .button {
+      margin-top: auto;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
   }
   @media (min-width: $xs) {
+    &__header {
+      img {
+        height: 250px;
+      }
+    }
     &__body {
       padding: 2rem;
       .title {
@@ -39,5 +57,12 @@
       }
     }
     grid-column: span 6;
+  }
+  @media (min-width: $md) {
+    &__header {
+      img {
+        height: 300px;
+      }
+    }
   }
 }

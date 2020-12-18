@@ -444,19 +444,9 @@ body {
     flex-basis: 40%;
   }
 }
-@media (min-width: 1440px) {
-  .column--is-40 {
-    flex-basis: 30%;
-  }
-}
 @media (min-width: 1200px) {
   .column--is-60 {
     flex-basis: 60%;
-  }
-}
-@media (min-width: 1440px) {
-  .column--is-60 {
-    flex-basis: 70%;
   }
 }
 .column--is-75 {
@@ -496,7 +486,7 @@ body {
   transition: background 0.3s ease-in-out;
 }
 .header__top .right .donate:hover {
-  background: #403a6e;
+  background: #4a4365;
 }
 @media (min-width: 992px) {
   .header__top {
@@ -505,7 +495,7 @@ body {
 }
 .header__desktop {
   display: none;
-  padding: 2rem;
+  padding: 2rem 3rem;
   align-items: center;
 }
 @media (min-width: 992px) {
@@ -1012,16 +1002,17 @@ div.intro h2 {
   }
 }
 
-.card {
-  padding: 1rem;
+.card__header img {
+  max-height: 225px;
+  object-fit: cover;
 }
 .card__body {
-  padding: 1rem 0 0 0;
+  padding: 1rem;
 }
 .card__body .title {
   font-size: 22.5px;
   font-weight: bold;
-  margin: 1rem 0;
+  margin-bottom: 0.5rem;
   line-height: 1.1;
 }
 .card__body .description {
@@ -1035,11 +1026,27 @@ div.intro h2 {
 
 .blog-grid {
   background: white;
-  padding: 1rem;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.blog-grid .card {
+  grid-column: 1/-1;
+}
+@media (min-width: 768px) {
+  .blog-grid {
+    grid-template-columns: repeat(12, 1fr);
+    padding: 2rem;
+  }
+  .blog-grid .card {
+    grid-column: span 4;
+  }
 }
 @media (min-width: 1440px) {
   .blog-grid {
     padding: 3rem;
+    gap: 2rem;
   }
 }
 
@@ -1133,10 +1140,17 @@ div.intro h2 {
   font-weight: bold;
   line-height: 1.4;
 }
+.text-block h2 {
+  font-size: 28.13px;
+  margin-bottom: 1rem;
+}
 @media (min-width: 992px) {
   .text-block {
     max-width: 75ch;
     padding-right: 2rem;
+  }
+  .text-block h2 {
+    font-size: 35.16px;
   }
   .text-block ul {
     font-size: 18px;
@@ -1309,7 +1323,7 @@ div.intro h2 {
 .staff-card__body .employer {
   font-style: italic;
 }
-.staff-card__body .contact,
+.staff-card__body .phone,
 .staff-card__body .role {
   font-size: 18px;
   margin-top: 1rem;
@@ -1348,6 +1362,7 @@ div.intro h2 {
 }
 @media (min-width: 768px) {
   .programs {
+    gap: 1.5rem;
     padding: 4rem 2rem;
   }
   .programs__title h3 {
@@ -1359,6 +1374,10 @@ div.intro h2 {
   grid-column: 1/-1;
   background: #e2e8f0;
 }
+.program__header img {
+  height: 200px;
+  object-fit: cover;
+}
 .program__body {
   padding: 1rem;
 }
@@ -1366,9 +1385,18 @@ div.intro h2 {
   font-size: 22.5px;
   margin-bottom: 1rem;
 }
+.program__body .button {
+  margin-top: auto;
+}
+.program__body p:last-of-type {
+  margin-bottom: 0;
+}
 @media (min-width: 768px) {
   .program {
     grid-column: span 6;
+  }
+  .program__header img {
+    height: 250px;
   }
   .program__body {
     padding: 2rem;
@@ -1376,6 +1404,108 @@ div.intro h2 {
   .program__body .title {
     font-size: 28.13px;
   }
+}
+@media (min-width: 1200px) {
+  .program__header img {
+    height: 300px;
+  }
+}
+
+.contact {
+  background: white;
+  padding: 2rem 1rem;
+}
+@media (min-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    padding: 4rem 0;
+  }
+}
+
+.content {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+}
+.content--contact {
+  background: #edf2f7;
+}
+.content--contact h2,
+.content--contact h3 {
+  color: #142a66;
+  margin-bottom: 0.5rem;
+}
+.content--contact h3 ~ p,
+.content--contact h2 ~ p {
+  margin-bottom: 2rem;
+}
+.content--contact h2 {
+  font-size: 28.13px;
+}
+.content--contact h3 {
+  font-size: 22.5px;
+}
+.content--contact p:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .content {
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+  .content h2 {
+    font-size: 35.16px;
+  }
+  .content h3 {
+    font-size: 28.13px;
+  }
+}
+@media (min-width: 1024px) {
+  .content {
+    padding: 3rem;
+  }
+}
+
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.wpcf7-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  color: #142a66;
+  font-size: 18px;
+  font-weight: bold;
+}
+.wpcf7-form .wpcf7-text,
+.wpcf7-form .wpcf7-textarea {
+  margin-top: 0.5rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 0;
+  width: 100%;
+  font-size: 16px;
+}
+.wpcf7-form .wpcf7-textarea {
+  resize: vertical;
+}
+.wpcf7-form .wpcf7-submit {
+  background: #46447e;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.wpcf7-form .wpcf7-submit:hover {
+  background: #4e5db1;
 }
 
 /*# sourceMappingURL=styles.css.map */

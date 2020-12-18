@@ -22,9 +22,9 @@
                 alt="Community Smiles Dental Waukesha" /></div>
             <div class="location__title">Waukesha</div>
             <div class="location__address">
-              <span>Barstow Street</span>
-              <span>Waukesha, WI 53186</span>
-              <span>(262)555-5555</span>
+              <span>210 NW Barstow Street, Suite 305</span>
+              <span>Waukesha, WI 53188</span>
+              <span>(262) 522-7645</span>
             </div>
             <button class="button" id="waukesha">Show on Map</button>
           </div>
@@ -36,9 +36,9 @@
                 alt="Community Smiles Dental Menomonee Falls" /></div>
             <div class="location__title">Menomonee Falls</div>
             <div class="location__address">
-              <span>Appleton Ave</span>
-              <span>Menomonee Falls, WI 53186</span>
-              <span>(262)555-5555</span>
+              <span>N81 W15062 Appleton Avenue</span>
+              <span>Menomonee Falls, WI 53051</span>
+              <span>(262) 522-7645</span>
             </div>
             <button class="button" id="menomoneeFalls">Show on Map</button>
           </div>

@@ -6,7 +6,7 @@
         alt="Community Smiles Dental Programs">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quo!</p>
+        <p class="subtitle">Our programs provide access to affordable dental care to children throughout our community.</p>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
       </div>
       <div class="program">
         <div class="program__header"><img class="masthead__image"
-            src="<?php echo get_template_directory_uri() . '/images/';?>smiling-kid.png" alt="Healthy Smiles"></div>
+            src="<?php echo get_template_directory_uri() . '/images/';?>program-placeholder.jpg" alt="Healthy Smiles"></div>
         <div class="program__body">
           <h3 class="title">Healthy Smiles for Moms and Babies</h3>
           <p>Both clinics offers dental care to pregnant women who have Medicaid insurance or who have income falling
@@ -40,7 +40,7 @@
       </div>
       <div class="program">
         <div class="program__header"><img class="masthead__image"
-            src="<?php echo get_template_directory_uri() . '/images/';?>smiling-kid.png" alt="Healthy Smiles"></div>
+            src="<?php echo get_template_directory_uri() . '/images/';?>program-placeholder-2.jpg" alt="Healthy Smiles"></div>
         <div class="program__body">
           <h3 class="title">Head Start Partnership</h3>
           <p>The clinic's dental team and volunteers provide oral health instructions and federally mandated exams to
@@ -51,7 +51,7 @@
       </div>
       <div class="program">
         <div class="program__header"><img class="masthead__image"
-            src="<?php echo get_template_directory_uri() . '/images/';?>smiling-kid.png" alt="Healthy Smiles"></div>
+            src="<?php echo get_template_directory_uri() . '/images/';?>program-placeholder-3.jpg" alt="Healthy Smiles"></div>
         <div class="program__body">
           <h3 class="title">Give Kids a Smile Program</h3>
           <p>The American Dental Association’s annual Give Kids A Smile Program is working to eliminate the silent

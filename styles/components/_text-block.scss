@@ -13,7 +13,14 @@
     font-weight: bold;
     line-height: 1.4;
   }
+  h2 {
+    font-size: $h4;
+    margin-bottom: 1rem;
+  }
   @media (min-width: $sm) {
+    h2 {
+      font-size: $h3;
+    }
     ul {
       font-size: $h6;
     }

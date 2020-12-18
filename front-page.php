@@ -7,7 +7,7 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title">Community Smiles Dental</h1>
-        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+        <p class="subtitle">Everyone deserves a healthy smile.</p>
         <a href="/" class="button button--primary">Learn More</a>
       </div>
     </div>

@@ -6,7 +6,7 @@
         alt="Community Smiles Dental Programs">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quo!</p>
+        <p class="subtitle">We do our best to ensure that everyone has access to quality dental care.</p>
       </div>
     </div>
   </div>
@@ -17,11 +17,8 @@
       <div class="columns">
         <div class="column column--is-75">
           <div class="text-block">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quam repellendus magnam soluta quas.
-              Repudiandae asperiores ab magni? Ad nesciunt dignissimos suscipit dolore debitis consequatur, ipsum
-              ducimus hic illo magnam sint, alias, fugit minima numquam officiis cupiditate repellendus ex. Labore magni
-              nihil aperiam libero provident obcaecati impedit necessitatibus quo corporis.</p>
-            <p>The WCCDC provides dental care to children, women who are pregnant, and individuals who have special
+            <h2>How Do I know If I Qualify for Help?</h2>
+            <p>Community Smiles Dental provides dental care to children, women who are pregnant, and individuals who have special
               health needs(by referral) and who meet these eligibility guidelines:
             </p>
             <ul>

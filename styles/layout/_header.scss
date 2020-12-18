@@ -4,7 +4,7 @@
   &__top {
     display: none;
     .left {
-      background: hsl(243, 31%, 52%);
+      background: $primary400;
       flex: 1;
       padding: 1rem 2rem;
       .tagline {
@@ -15,7 +15,7 @@
     .right {
       margin-left: auto;
       .donate {
-        background: hsl(247, 31%, 63%);
+        background: $donate;
         padding: 1rem 4rem;
         height: 100%;
         display: block;
@@ -24,7 +24,7 @@
         font-weight: bold;
         transition: background 0.3s ease-in-out;
         &:hover {
-          background: hsl(247, 31%, 33%);
+          background: $primary700;
         }
       }
     }
@@ -34,7 +34,7 @@
   }
   &__desktop {
     display: none;
-    padding: 2rem;
+    padding: 2rem 3rem;
     align-items: center;
     @media (min-width: $sm) {
       display: flex;

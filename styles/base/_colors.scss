@@ -1,17 +1,52 @@
-$primary900: hsl(242, 15%, 20%);
-$primary700: hsl(252, 20%, 33%);
-$primary500: hsl(242, 30%, 38%);
-$primary400: hsl(224, 67%, 24%);
-$primary300: hsl(231, 39%, 50%);
-$primary200: hsl(224, 67%, 24%);
-$primary100: hsl(224, 67%, 24%);
-$secondary500: hsl(282, 56%, 38%);
-$secondary400: hsl(224, 67%, 24%);
-$secondary300: hsl(252, 34%, 53%);
-$secondary200: hsl(224, 67%, 24%);
-$secondary100: hsl(251, 35%, 75%);
+$primary900: hsl(242, 15, 20);
+$primary800: hsl(242, 18, 25);
+$primary700: hsl(252, 20, 33);
+$primary500: hsl(242, 30, 38);
+$primary400: hsl(243, 31, 52);
+$primary300: hsl(231, 39, 50);
+$primary200: hsl(247, 31, 63);
+$primary100: hsl(224, 67, 24);
+
+$secondary500: hsl(224, 67, 24);
+$secondary400: hsl(224, 67, 24);
+$secondary300: hsl(252, 34, 53);
+$secondary200: hsl(224, 67, 24);
+$secondary100: hsl(251, 35, 75);
+
 $neutral100: #f7fafc;
 $neutral200: #edf2f7;
 $neutral300: #e2e8f0;
 $neutral400: #cbd5e0;
 $neutral500: #a0aec0;
+
+$purple900: hsl(263, 67, 35);
+$purple800: hsl(263, 69, 42);
+$purple700: hsl(263, 70, 50);
+$purple600: hsl(262, 83, 58);
+$purple500: hsl(258, 90, 66);
+$purple400: hsl(255, 92, 76);
+$purple300: hsl(253, 95, 85);
+$purple200: hsl(251, 95, 92);
+$purple100: hsl(251, 91, 95);
+
+$indigo900: hsl(242, 47, 34);
+$indigo800: hsl(244, 55, 41);
+$indigo700: hsl(245, 58, 51);
+$indigo600: hsl(243, 75, 59);
+$indigo500: hsl(239, 84, 67);
+$indigo400: hsl(234, 89, 74);
+$indigo300: hsl(230, 94, 82);
+$indigo200: hsl(228, 96, 89);
+$indigo100: hsl(226, 100, 94);
+
+$gray900: hsl(221, 39, 11);
+$gray800: hsl(215, 28, 17);
+$gray700: hsl(217, 19, 27);
+$gray600: hsl(215, 14, 34);
+$gray500: hsl(220, 9, 46);
+$gray400: hsl(218, 11, 65);
+$gray300: hsl(216, 12, 84);
+$gray200: hsl(220, 13, 91);
+$gray100: hsl(220, 14, 96);
+
+$donate: hsl(247, 31, 63);

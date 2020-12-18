@@ -1,13 +1,16 @@
 .card {
-  padding: 1rem;
   &__header {
+    img {
+      max-height: 225px;
+      object-fit: cover;
+    }
   }
   &__body {
-    padding: 1rem 0 0 0;
+    padding: 1rem;
     .title {
       font-size: $h5;
       font-weight: bold;
-      margin: 1rem 0;
+      margin-bottom: 0.5rem;
       line-height: 1.1;
     }
     .description {

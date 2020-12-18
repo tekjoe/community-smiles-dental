@@ -6,7 +6,7 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sunt.</p>
+        <p class="subtitle">We are fortunate to have a dedicated and accomplished board with a wide range of expertise.</p>
       </div>
     </div>
   </div>

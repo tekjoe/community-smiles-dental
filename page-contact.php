@@ -13,9 +13,37 @@
 </section>
 <section>
   <div class="container">
+    <div class="contact">
+      <div class="columns columns--has-gap">
+        <div class="column">
+          <div class="content content--contact">
+            <h2>How Can We Help?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
+              laudantium et magni natus ut a delectus.</p>
+            <h3>Eligibility</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
+              laudantium et magni natus ut a delectus.</p>
+            <h3>Locations</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
+              laudantium et magni natus ut a delectus..</p>
+            <h3>Frequently Asked Questions</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
+              laudantium et magni natus ut a delectus.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content content--contact">
+            <h2>Send Us A Message</h2>
+            <?php if (get_field('contact_form', 'option')): ?>
+            <?php echo do_shortcode('[contact-form-7 id="'.get_field('contact_form', 'option').' title="Contact Form"]'); ?>
+            <?php else: ?>
+            <span></span>
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
-<section>
 </section>
 <?php get_template_part('partials/newsletter'); ?>
 <?php get_template_part('partials/featured-posts'); ?>

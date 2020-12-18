@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="header__desktop">
-          <div class="logo"><img src="<?php echo get_template_directory_uri() . '/images/';?>csd-logo.png"
+          <div class="logo"><img src="<?php echo get_template_directory_uri() . '/images/';?>csd-logo-reversed.svg"
               alt="Community Smiles Dental Logo" />
           </div>
           <nav class="header__nav">

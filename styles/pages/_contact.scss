@@ -1,0 +1,89 @@
+.contact {
+  background: white;
+  padding: 2rem 1rem;
+  @media (min-width: 768px) {
+    padding: 3rem 1rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 4rem 0;
+  }
+}
+
+.content {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  &--contact {
+    background: $neutral200;
+    h2,
+    h3 {
+      color: $secondary400;
+      margin-bottom: 0.5rem;
+    }
+    h3 ~ p,
+    h2 ~ p {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: $h4;
+    }
+    h3 {
+      font-size: $h5;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 2rem;
+    margin-bottom: 0;
+    h2 {
+      font-size: $h3;
+    }
+    h3 {
+      font-size: $h4;
+    }
+  }
+  @media (min-width: 1024px) {
+    padding: 3rem;
+  }
+}
+
+.wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    color: $secondary400;
+    font-size: $h6;
+    font-weight: bold;
+  }
+  .wpcf7-text,
+  .wpcf7-textarea {
+    margin-top: 0.5rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 0;
+    width: 100%;
+    font-size: $p;
+  }
+  .wpcf7-textarea {
+    resize: vertical;
+  }
+  .wpcf7-submit {
+    background: $primary500;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    &:hover {
+      background: $primary300;
+    }
+  }
+}
