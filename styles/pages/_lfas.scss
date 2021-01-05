@@ -1,0 +1,232 @@
+.event-masthead {
+  background: linear-gradient(
+      rgba($primary500, 0.6),
+      rgba($primary500, 0.75),
+      rgba($primary500, 0.95)
+    ),
+    url("../../../../../wp-content/themes/csd/images/lfas-masthead.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  padding: 1rem;
+  @media (min-width: $sm) {
+    height: 400px;
+  }
+  @media (min-width: $md) {
+    height: 550px;
+  }
+  .top {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+      font-size: $h3;
+    }
+    @media (min-width: $xs) {
+      .title {
+        font-size: $h2;
+      }
+    }
+    @media (min-width: $md) {
+      .title {
+        font-size: $h1;
+      }
+    }
+  }
+  .bottom {
+    flex: 1;
+    display: flex;
+    width: 80%;
+    .masthead-column {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-of-type) {
+        display: none;
+      }
+      .details {
+        margin-left: 1rem;
+        &__title {
+          font-weight: bold;
+          font-size: $h5;
+        }
+      }
+      .icon {
+        img {
+          height: 48px;
+          width: 48px;
+        }
+      }
+      @media (min-width: $sm) {
+        &:not(:last-of-type) {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.event-details {
+  padding: 2rem 0;
+  background: $neutral100;
+}
+
+.content {
+  &--centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &__image {
+    img {
+      max-height: 225px;
+      object-fit: cover;
+      object-position: center 25%;
+    }
+    &--contain {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 0.5rem;
+    h2 {
+      font-size: $h4;
+    }
+  }
+  @media (min-width: $xs) {
+    &__image {
+      img {
+        max-height: 300px;
+      }
+    }
+    &--centered {
+      padding: 2rem;
+    }
+  }
+  @media (min-width: $md) {
+    &__title {
+      h2 {
+        font-size: $h3;
+      }
+    }
+    &__image {
+      img {
+        max-height: 350px;
+      }
+    }
+    &--centered {
+      padding: 1rem;
+    }
+  }
+}
+
+.highlights {
+  background: $primary300;
+  color: white;
+  padding: 3rem 0;
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    h3 {
+      font-size: $h4;
+    }
+  }
+
+  &__highlights {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+  }
+  @media (min-width: $sm) {
+    &__title {
+      h3 {
+        font-size: $h3;
+      }
+    }
+  }
+}
+
+.highlight {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  &__icon {
+    margin-bottom: 1rem;
+    img {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+  &__title {
+    text-align: center;
+    h5 {
+      font-size: $h6;
+    }
+  }
+  @media (min-width: $xs) {
+    grid-column: span 6;
+  }
+  @media (min-width: $sm) {
+    grid-column: span 4;
+    padding: 2rem;
+  }
+  @media (min-width: $md) {
+    &__title {
+      h5 {
+        font-size: $h5;
+      }
+    }
+  }
+}
+
+.sponsors {
+  background: white;
+  padding: 3rem 0;
+  text-align: center;
+  &__title {
+    color: $primary500;
+    margin-bottom: 2rem;
+  }
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  &__title {
+    text-align: center;
+    grid-column: 1/-1;
+    h4 {
+      color: $primary500;
+    }
+  }
+  &--text-only {
+    .sponsor.sponsor--text {
+      grid-column: span 2;
+      font-size: $h6;
+      padding: 2rem;
+    }
+  }
+  .sponsor {
+    padding: 3rem;
+    grid-column: span 4;
+    text-align: center;
+    font-size: clamp($h6, 1.5vw, 42px);
+    font-weight: bold;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

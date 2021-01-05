@@ -18,6 +18,9 @@
   &--has-gap {
     gap: 1rem;
   }
+  &--reversed-mobile {
+    flex-direction: column-reverse;
+  }
   // Switch to row at >768
   @media (min-width: $xs) {
     flex-direction: row;
