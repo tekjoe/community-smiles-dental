@@ -132,3 +132,30 @@
     }
   }
 }
+
+.header__mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: $primary500;
+  .logo {
+    img {
+      height: 4rem;
+    }
+  }
+  .hamburger {
+    .open-button {
+      background: transparent;
+      border: none;
+      border-radius: 50%;
+      svg {
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+    }
+  }
+  @media (min-width: $sm) {
+    display: none;
+  }
+}
