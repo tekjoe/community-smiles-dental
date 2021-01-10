@@ -25,11 +25,7 @@
   background: $secondary300;
   top: 0;
   z-index: 100;
-  // Animations
-  transform: translateX(375px);
-  &.open {
-    right: 0;
-  }
+  right: -260px;
   nav {
     .mobile-nav__links {
       list-style-type: none;

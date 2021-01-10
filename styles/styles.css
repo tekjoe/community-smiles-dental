@@ -1221,10 +1221,7 @@ div.intro h2 {
   background: #8275bd;
   top: 0;
   z-index: 100;
-  transform: translateX(375px);
-}
-.mobile-nav.open {
-  right: 0;
+  right: -260px;
 }
 .mobile-nav nav .mobile-nav__links {
   list-style-type: none;

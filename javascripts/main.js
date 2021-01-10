@@ -5,7 +5,7 @@ $(() => {
 
   openButton.addEventListener("click", () => {
     const tl = gsap.timeline();
-    tl.to("#mobile-nav", { x: 120, duration: 0.3 }).to("#close-menu", {
+    tl.to("#mobile-nav", { right: 0, duration: 0.3 }).to("#close-menu", {
       opacity: 1,
       duration: 0.5,
     });
@@ -13,7 +13,7 @@ $(() => {
 
   closeButton.addEventListener("click", () => {
     const tl = gsap.timeline();
-    tl.to("#mobile-nav", { x: 400, duration: 0.3 }).to("#close-menu", {
+    tl.to("#mobile-nav", { right: -260, duration: 0.3 }).to("#close-menu", {
       opacity: 0,
       duration: 0.5,
     });
