@@ -4,6 +4,7 @@
               "theme_location" => "header-menu",
               "container" => "ul",
               "container_class" => "mobile-nav__links",
+              "depth" => 2,
               "menu_class" => "mobile-nav__links"
     )); ?>
   </nav>

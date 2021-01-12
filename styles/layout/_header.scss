@@ -52,8 +52,6 @@
       }
     }
   }
-  &__mobile {
-  }
   &__nav {
     margin-left: auto;
   }
@@ -141,7 +139,8 @@
   background: $primary500;
   .logo {
     img {
-      height: 4rem;
+      width: 5rem;
+      height: auto;
     }
   }
   .hamburger {

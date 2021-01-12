@@ -588,7 +588,8 @@ body {
   background: #46447e;
 }
 .header__mobile .logo img {
-  height: 4rem;
+  width: 5rem;
+  height: auto;
 }
 .header__mobile .hamburger .open-button {
   background: transparent;
@@ -1203,6 +1204,7 @@ div.intro h2 {
   border: none;
   border-radius: 50%;
   opacity: 0;
+  border: 2px solid white;
 }
 .close-button svg {
   height: 1.25rem;
@@ -1227,6 +1229,20 @@ div.intro h2 {
   list-style-type: none;
   list-style-position: inside;
 }
+.mobile-nav nav .mobile-nav__links .menu-item-has-children {
+  position: relative;
+}
+.mobile-nav nav .mobile-nav__links .menu-item-has-children a:first-of-type::after {
+  position: absolute;
+  content: ">";
+  top: 0;
+  right: 0;
+  padding: 1.5rem;
+  height: 70px;
+  display: block;
+  border-left: 2px solid #6f5eb0;
+  line-height: 1;
+}
 .mobile-nav nav .mobile-nav__links .menu-item {
   border-bottom: 2px solid #6f5eb0;
 }
@@ -1240,6 +1256,7 @@ div.intro h2 {
 }
 .mobile-nav nav .mobile-nav__links .sub-menu {
   list-style-type: none;
+  display: none;
 }
 .mobile-nav nav .mobile-nav__links .sub-menu .menu-item {
   border-bottom: none;
