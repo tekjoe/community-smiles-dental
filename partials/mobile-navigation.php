@@ -5,7 +5,8 @@
               "container" => "ul",
               "container_class" => "mobile-nav__links",
               "depth" => 2,
-              "menu_class" => "mobile-nav__links"
+              "menu_class" => "mobile-nav__links",
+              "walker" => new CSD_Menu_Walker()
     )); ?>
   </nav>
 </div>

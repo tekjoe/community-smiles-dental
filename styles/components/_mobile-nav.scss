@@ -34,18 +34,19 @@
       list-style-position: inside;
       .menu-item-has-children {
         position: relative;
-        a:first-of-type {
-          &::after {
-            position: absolute;
-            content: ">";
-            top: 0;
-            right: 0;
-            padding: 1.5rem;
-            height: 70px;
-            display: block;
-            border-left: 2px solid hsl(252, 34%, 53%);
-            line-height: 1;
-          }
+        .expand-menu {
+          position: absolute;
+          color: white;
+          font-size: 1.5rem;
+          font-weight: bold;
+          cursor: pointer;
+          top: 0;
+          right: 0;
+          padding: 1.5rem;
+          height: 70px;
+          display: block;
+          border-left: 2px solid hsl(252, 34%, 53%);
+          line-height: 1;
         }
       }
       .menu-item {
@@ -61,7 +62,8 @@
       }
       .sub-menu {
         list-style-type: none;
-        display: none;
+        opacity: 0;
+        height: 0;
         .menu-item {
           border-bottom: none;
           background: $secondary200;

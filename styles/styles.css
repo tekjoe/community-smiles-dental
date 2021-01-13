@@ -1232,9 +1232,12 @@ div.intro h2 {
 .mobile-nav nav .mobile-nav__links .menu-item-has-children {
   position: relative;
 }
-.mobile-nav nav .mobile-nav__links .menu-item-has-children a:first-of-type::after {
+.mobile-nav nav .mobile-nav__links .menu-item-has-children .expand-menu {
   position: absolute;
-  content: ">";
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
   top: 0;
   right: 0;
   padding: 1.5rem;
@@ -1256,7 +1259,8 @@ div.intro h2 {
 }
 .mobile-nav nav .mobile-nav__links .sub-menu {
   list-style-type: none;
-  display: none;
+  opacity: 0;
+  height: 0;
 }
 .mobile-nav nav .mobile-nav__links .sub-menu .menu-item {
   border-bottom: none;
