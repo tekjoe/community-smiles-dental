@@ -3,6 +3,27 @@ $(() => {
   const closeButton = document.getElementById("close-menu");
   const openButton = document.getElementById("open-menu");
   const expandButton = document.getElementById("expand-menu");
+  const notificationBar = document.getElementById("notification-bar");
+
+  const checkForLocalStorage = () => {
+    const isNotificationDismissed = JSON.parse(
+      localStorage.getItem("isNotificationDismissed")
+    );
+    if (isNotificationDismissed) {
+      notificationBar.classList.add("closed");
+    }
+  };
+
+  const checkForNotificationBar = () => {
+    if (document.getElementById("notification-bar") !== null) {
+      const notificationButton = document.getElementById("notification-button");
+      notificationBar.classList.add("open");
+      notificationButton.addEventListener("click", () => {
+        notificationBar.classList.add("closed");
+        localStorage.setItem("isNotificationDismissed", "true");
+      });
+    }
+  };
 
   openButton.addEventListener("click", () => {
     const tl = gsap.timeline();
@@ -35,4 +56,7 @@ $(() => {
   };
 
   expandButton.addEventListener("click", animateMenu);
+
+  checkForLocalStorage();
+  checkForNotificationBar();
 });

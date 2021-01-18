@@ -44,7 +44,9 @@
     align-items: center;
     img {
       border-radius: 50%;
-      width: 50%;
+      width: 175px;
+      height: 175px;
+      object-fit: cover;
       display: block;
       margin-top: -5rem;
     }
@@ -64,9 +66,10 @@
       font-style: italic;
     }
     .phone,
-    .role {
+    .role,
+    .email {
       font-size: $h6;
-      margin-top: 1rem;
+      margin-top: 0.75rem;
     }
     @media (min-width: $md) {
       .name {
@@ -76,6 +79,15 @@
   }
   @media (min-width: $xs) {
     grid-column: span 6;
+  }
+  @media (min-width: $sm) {
+    &__header {
+      img {
+        width: 225px;
+        height: 225px;
+        margin-top: -6rem;
+      }
+    }
   }
   @media (min-width: $md) {
     grid-column: span 4;

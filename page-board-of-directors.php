@@ -6,7 +6,8 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">We are fortunate to have a dedicated and accomplished board with a wide range of expertise.</p>
+        <p class="subtitle">We are governed by a dedicated and accomplished Board of Directors with a wide range of
+          expertise.</p>
       </div>
     </div>
   </div>

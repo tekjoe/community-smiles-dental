@@ -10,6 +10,7 @@
     &__image {
       height: 96px;
       width: 96px;
+      margin-bottom: 1rem;
     }
     &__title {
       font-size: $h4;
@@ -25,11 +26,12 @@
         height: 160px;
         width: 160px;
       }
-      text-align: left;
-      align-items: flex-start;
     }
   }
   @media (min-width: $sm) {
     padding: 3rem;
+    &__title {
+      font-weight: 800;
+    }
   }
 }

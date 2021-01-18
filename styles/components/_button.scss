@@ -3,7 +3,7 @@
   display: inline-block;
   color: white;
   min-width: 150px;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -11,8 +11,12 @@
   &:hover {
     background: $primary300;
   }
-  @media (min-width: $xs) {
-    padding: 1rem;
+  &--inverse {
+    background: white;
+    color: $primary500;
+    &:hover {
+      background: white;
+    }
   }
 }
 

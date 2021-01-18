@@ -22,12 +22,13 @@
 
 .mobile-nav {
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 260px;
   background: $secondary300;
   top: 0;
   z-index: 100;
   right: -260px;
+  overflow-x: scroll;
   nav {
     .mobile-nav__links {
       list-style-type: none;

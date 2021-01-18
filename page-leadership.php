@@ -6,7 +6,8 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">We oversee the day-to-day operations of our dental clinics and network of partners.</p>
+        <p class="subtitle">Community Smiles Dental is led by a strong team of compassionate professionals and
+          providers.</p>
       </div>
     </div>
   </div>
@@ -26,6 +27,11 @@
           <div class="name"><?php the_sub_field('name') ?></div>
           <div class="position"><?php the_sub_field('position') ?></div>
           <div class="phone"><?php the_sub_field('phone_number') ?></div>
+          <?php if (get_sub_field('email_address')): ?>
+          <div class="email">
+            <a href="mailto:<?php the_sub_field('email_address') ?>"><?php the_sub_field('email_address') ?></a>
+          </div>
+          <?php endif; ?>
         </div>
       </div>
       <?php endwhile; ?>

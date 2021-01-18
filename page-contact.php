@@ -6,7 +6,7 @@
         alt="Community Smiles Dental Programs">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quo!</p>
+        <p class="subtitle">We look forward to hearing from you.</p>
       </div>
     </div>
   </div>

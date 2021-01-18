@@ -1,5 +1,5 @@
-$font-family: "Mulish", sans-serif;
-$body-text: "Mulish", sans-serif;
+$title-text: "Mulish", sans-serif;
+$body-text: "Nunito Sans", sans-serif;
 
 // Scale 1.250 – Major Third
 $h1: 54.93px;
@@ -24,13 +24,18 @@ $headings: (
   #{$heading} {
     line-height: 1.1;
     font-size: $size;
+    font-family: $title-text;
   }
+}
+
+body {
+  font-family: $body-text;
 }
 
 p {
   font-size: $p;
   margin-bottom: $p;
-  @media (min-width: $lg) {
+  @media (min-width: $md) {
     font-size: $h6;
   }
 }

@@ -4,7 +4,7 @@
       <div class="columns">
         <div class="column column--centered">
           <h2>Newsletter</h2>
-          <p>Support statement goes here like this to add more information. Support statement goes here.</p>
+          <p>Sign up for our e-newsletter to stay informed about all that’s happening at Community Smiles Dental.</p>
         </div>
         <div class="column column--centered">
           <?php if (get_field('newsletter_signup', 'option')): ?>

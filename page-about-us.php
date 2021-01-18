@@ -16,42 +16,27 @@
       <div class="columns">
         <div class="column column--is-75">
           <div class="text-block">
-            <p class="intro">The Waukesha County Community Dental Clinic is dedicated to improving the oral health of
-              disadvantaged
-              individuals through clinical services, preventive education, and advocacy because everyone deserves a
-              healthy
-              smile.</p>
-            <p>The Waukesha County Dental Coalition (WCDC) was established under a planning grant to develop a
-              community-academic partnership that addressed oral health needs in Waukesha County. The Waukesha County
-              Dental
-              Coalition members devoted 18 months to these assessments and worked to create and complete a business
-              plan.
-              The business plan proposed the establishment of a non-profit dental health clinic, now known as the
-              Waukesha
-              County Community Dental Clinic (WCCDC), to reduce barriers to oral health care and ultimately improve the
-              oral
-              health in Waukesha County.</p>
-            <p>Appropriate space for a dental clinic was identified in the “Barstow Building”, home to the Waukesha
-              Family
-              Practice Center, the Hispanic Community Health Resource Center, and La Casa de Esperanza Behavioral Health
-              Clinic, which is centrally located in the city of Waukesha and adjacent to the local bus terminal.</p>
-            <p>Executive Director hired to coordinate the business aspects of the dental clinic. The WCCDC was been
-              successful in achieving all of the initial goals. A successful fundraising campaign raised donations and
-              pledges totaling $1.6 million dollars.</p>
-            <p>The construction phase of the dental clinic concluded. The clinic opened in May 2008 and provided access
-              to
-              dental care for thousands of children during its first year.</p>
-            <p>WCCDC established a Community Dental Health Coordinator position. The CDHC offers dental screening,
-              comprehensive dental exams, and oral health education, using mobile dental equipment, as well as patient
-              navigation to volunteer dentists for follow up dental care.</p>
-            <p>Sets a record by providing 10,286 appointments and $2.52 million in dental care to 3500 patients in one
-              year,
-              effectively reaching capacity of the Barstow clinic. Discussions and plans are underway for the buildout
-              of
-              a
-              new satellite clinic in Menomonee Falls to widen the reach of dental service to those in the Menomonee
-              Falls
-              area.</p>
+            <h2>Mission</h2>
+            <p>Community Smiles Dental improves the lives of the underserved through oral healthcare services,
+              preventative education, and advocating for systemic healthcare change - Because
+              everyone deserves a healthy smile.”
+            </p>
+            <h2>Vision</h2>
+            <p>To create a healthier Community by improving oral health and ensuring that no
+              one suffers from dental pain.</p>
+            <h2>Our Values</h2>
+            <ul>
+              <li><strong>Inclusivity:</strong> We value diversity, providing the highest quality care to all in our
+                community.</li>
+              <li><strong>Professionalism:</strong> We have high expectations for our service, demonstrating “cutting
+                edge” clinical care, customer service, and administrative support in our clinics.</li>
+              <li><strong>Compassion:</strong> We know compassion isn’t just caring for the person, it’s advocating
+                together to improve the system.</li>
+              <li><strong>Quality:</strong> A simple promise that takes organizational commitment - Offer the best
+                possible clinical care, healthcare technology, and resources.</li>
+              <li><strong>Community:</strong> Our work creates more than healthy smiles, it creates strong lives across
+                our entire community.</li>
+            </ul>
           </div>
         </div>
         <div class="column column--is-25">

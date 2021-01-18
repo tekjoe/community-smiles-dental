@@ -7,8 +7,8 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title">Community Smiles Dental</h1>
-        <p class="subtitle">Everyone deserves a healthy smile.</p>
-        <a href="/" class="button button--primary">Learn More</a>
+        <p class="subtitle">Strengthening smiles. Strengthening community.</p>
+        <a href="<?php echo site_url('/eligibility'); ?>" class="button button--primary">Learn More</a>
       </div>
     </div>
   </div>
@@ -19,16 +19,14 @@
     <div class="intro">
       <div class="columns">
         <div class="column">
-          <h2>Who we are and what we do goes here.</h2>
-          <p>Support statement goes here liket his to add more information. Support statement goes here.</p>
+          <h2>Everyone deserves a healthy smile.</h2>
+          <p>Community Smiles Dental improves the lives of the underserved through oral healthcare services, preventive
+            education, and advocating for systemic healthcare change - Because everyone deserves a healthy smile.</p>
         </div>
         <div class="column">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deleniti veniam iure cum veritatis
-            minima
-            fugit labore! Aut architecto, iusto, praesentium deserunt nesciunt earum molestias, corrupti laudantium
-            nihil
-            cumque quisquam.</p>
-          <a href="/" class="button button--primary">Learn More</a>
+          <p>Our vision is to create a healthier Community by improving oral health and ensuring that no one suffers
+            from dental pain.</p>
+          <a href="<?php echo site_url('/about-us'); ?>" class="button button--primary">Learn More</a>
         </div>
       </div>
     </div>
@@ -40,7 +38,8 @@
     <div class="cta-grid">
       <div class="eligibility">
         <h3>Eligibility</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa obcaecati vero iure?</p>
+        <p>We are currently accepting new patients. Please complete our verification form to learn if you qualify for
+          our clinic’s services.</p>
         <form class="input-group">
           <input type="text" class="input-group__input input-group__input--text" placeholder="ZIP Code"
             pattern="^\d{5}$" />
@@ -49,11 +48,9 @@
       </div>
       <div class="donate">
         <h3>Donate</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa obcaecati vero iure?</p>
-        <form class="input-group">
-          <input type="text" class="input-group__input input-group__input--text" placeholder="$25" />
-          <button class="input-group__button">Donate</button>
-        </form>
+        <p>Donations to our clinic grant patients crucial and life-changing dental care access.</p>
+        <a href="https://forms.donorsnap.com/form?id=c0f77fce-51df-4101-b726-ad789c2a24b4"
+          class="button button--inverse" target="_blank" rel="noreferrer noopener">Donate</a>
       </div>
       <div class="image"><img src="<?php echo get_template_directory_uri() . '/images/';?>smiling-girl.png"
           alt="Smiling Girl"></div>
@@ -70,27 +67,30 @@
             <img src="<?php echo get_template_directory_uri() . '/images/';?>caring.svg" alt="Caring for the Community"
               class="feature__image" />
             <p class="feature__title">Caring</p>
-            <p class="feature__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quam
-              aliquid
-              quod assumenda voluptatibus, accusamus eaque esse iure! Soluta, vitae?</p>
+            <p class="feature__description">Our work is about so much more than clinical services. It’s about quality.
+              It’s about respect. And it’s about bringing compassion to each individual we serve. Because we know that
+              compassion creates a ripple effect. Impacting not only oral health but the whole life of the individuals
+              we serve.</p>
           </div>
         </div>
         <div class="column">
           <div class="feature">
-            <img src="<?php echo get_template_directory_uri() . '/images/';?>helping.svg" alt="Serving the Community"
+            <img src="<?php echo get_template_directory_uri() . '/images/';?>serving.svg" alt="Serving the Community"
               class="feature__image" />
             <p class="feature__title">Serving</p>
-            <p class="feature__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam at aperiam
-              incidunt quae! Labore libero voluptate, expedita officiis et dolorem?</p>
+            <p class="feature__description">With a big-picture approach, we believe that healthy habits create healthy
+              smiles. And that produces healthy lives. Through programs, training, and education we empower families to
+              take charge of their oral healthcare not just for today, but for tomorrow as well.</p>
           </div>
         </div>
         <div class="column">
           <div class="feature">
-            <img src="<?php echo get_template_directory_uri() . '/images/';?>community.svg"
+            <img src="<?php echo get_template_directory_uri() . '/images/';?>advocating.svg"
               alt="Advocating in the Community" class="feature__image" />
             <p class="feature__title">Advocating</p>
-            <p class="feature__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae nam,
-              magni quae officia unde similique commodi aut in exercitationem assumenda.</p>
+            <p class="feature__description">At Community Smiles Dental we champion access to care, advocating for those
+              who struggle to find access to dental care. Regardless of any barrier, regardless of any status, and
+              regardless of a broken system, we believe everyone deserves the best in oral healthcare.</p>
           </div>
         </div>
       </div>

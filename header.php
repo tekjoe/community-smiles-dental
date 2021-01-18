@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <?php get_template_part('partials/notification-bar'); ?>
   <header>
     <div class="container">
       <div class="header">
@@ -26,8 +27,11 @@
           </div>
         </div>
         <div class="header__desktop">
-          <div class="logo"><img src="<?php echo get_template_directory_uri() . '/images/';?>csd-logo-reversed.svg"
-              alt="Community Smiles Dental Logo" />
+          <div class="logo">
+            <a href="<?php echo site_url(); ?>">
+              <img src="<?php echo get_template_directory_uri() . '/images/';?>csd-logo-reversed.svg"
+                alt="Community Smiles Dental Logo" />
+            </a>
           </div>
           <nav class="header__nav">
             <?php wp_nav_menu(array(
@@ -40,8 +44,12 @@
         </div>
       </div>
       <div class="header__mobile">
-        <div class="logo"><img src="<?php echo get_template_directory_uri() . '/images/';?>csd-logo-reversed.svg"
-            alt="Community Smiles Dental Logo" /></div>
+        <div class="logo">
+          <a href="<?php echo site_url(); ?>"><img
+              src="<?php echo get_template_directory_uri() . '/images/';?>csd-logo-reversed.svg"
+              alt="Community Smiles Dental Logo" />
+          </a>
+        </div>
         <div class="hamburger">
           <button class="open-button" id="open-menu">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
