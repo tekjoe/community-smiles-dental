@@ -57,6 +57,12 @@
           font-weight: bold;
           font-size: $h5;
         }
+        &__subtitle {
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
       }
       .icon {
         img {
@@ -98,7 +104,7 @@
     }
   }
   &__title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     h2 {
       font-size: $h4;
     }
@@ -141,11 +147,13 @@
       font-size: $h4;
     }
   }
-
   &__highlights {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
+  }
+  @media (min-width: $xs) {
+    padding: 3rem;
   }
   @media (min-width: $sm) {
     &__title {
@@ -153,6 +161,9 @@
         font-size: $h3;
       }
     }
+  }
+  @media (min-width: $md) {
+    padding: 5rem;
   }
 }
 
@@ -193,11 +204,17 @@
 
 .sponsors {
   background: white;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   text-align: center;
   &__title {
     color: $primary500;
     margin-bottom: 2rem;
+  }
+  @media (min-width: $sm) {
+    padding: 5rem 3rem;
+  }
+  @media (min-width: $md) {
+    padding: 5rem;
   }
 }
 
@@ -206,9 +223,11 @@
 .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
   &__title {
     text-align: center;
     grid-column: 1/-1;
+    margin-bottom: 2rem;
     h4 {
       color: $primary500;
     }
@@ -220,25 +239,31 @@
       font-size: 1.25rem;
     }
   }
-  &--text-only {
-    .sponsor.sponsor--text {
-      grid-column: span 2;
-      font-size: $h6;
-      padding: 2rem;
-    }
-  }
+
   .sponsor {
     padding: 2rem;
+    background: $neutral300;
+    color: $primary800;
     grid-column: 1/-1;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp($h6, 1.5vw, 42px);
+    font-size: 1.5rem;
     font-weight: bold;
+    &:nth-of-type(2n) {
+      background: $neutral200;
+    }
     img {
       height: auto;
       width: 100%;
+    }
+  }
+  &--text-only {
+    .sponsor {
+      grid-column: 1/-1;
+      font-size: $h6;
+      padding: 2rem 1rem;
     }
   }
   @media (min-width: $xs) {

@@ -6,59 +6,59 @@
         alt="Community Smiles Dental Programs">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
-        <p class="subtitle">Our programs provide access to affordable dental care to children throughout our community.</p>
+        <p class="subtitle">Our programs provide access to affordable dental care to children throughout our community.
+        </p>
       </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container">
-    <div class="programs">
-      <div class="programs__title">
-        <h3>Oral Health Programs</h3>
-      </div>
-      <div class="program">
-        <div class="program__header"><img class="masthead__image"
-            src="<?php echo get_template_directory_uri() . '/images/';?>smiling-kid.png" alt="Healthy Smiles"></div>
-        <div class="program__body">
-          <h3 class="title">Healthy Smiles for Tot & Teens Dental Program</h3>
-          <p>Both clinics see children ages 0-18 who have Medicaid insurance or who have income falling below 200% of
-            the Federal Poverty Guidelines and have no dental insurance.</p>
-          <p><a href="#" class="button">Learn more</a></p>
+    <div class="page-wrapper">
+      <div class="columns">
+        <div class="column column--is-75">
+          <div class="text-block">
+            <p>At Community Smiles Dental, we strive to provide access to affordable and quality dental care to children
+              throughout our community. Our dental clinics are designed and created with you and your kids in mind, and
+              staffed with skilled, caring and dedicated staff committed to providing a positive and healthy dental
+              experience. By providing care today, we can help prevent serious health problems from occurring later in
+              the child's life.</p>
+            <p>To reach as many children as possible in our community, Community Smiles Dental builds relationships
+              with local daycare centers, schools, other healthcare providers and community organizations that are
+              working hard to meet the needs of our children. We partner with these groups to educate their members on
+              the need for good oral health which leads to healthier bodies and minds and a positive self-esteem.</p>
+            <h2>
+              Services Provided
+            </h2>
+            <p><strong>Children Receive:</strong></p>
+            <ul>
+              <li>Exams and X-rays</li>
+              <li>Cleanings</li>
+              <li>Fluoride Varnish and Sealants</li>
+              <li>Fillings</li>
+              <li>Extractions</li>
+              <li>6 Month Recare</li>
+              <li>Education</li>
+              <li>Nitrous oxide (laughing gas)</li>
+              <li>Dental care in a hospital setting</li>
+            </ul>
+            <p><strong>Adults Receive:</strong></p>
+            <ul>
+              <li>Exams and dental treatment limited to an urgent or emergent dental need.</li>
+            </ul>
+            <h2>Services Not Provided</h2>
+            <ul>
+              <li>Orthodontics (e.g., braces)</li>
+              <li>Oral Surgery for Orthodontics</li>
+              <li>Wisdom Teeth Extractions</li>
+              <li>Dentures or Partials</li>
+              <li>Cosmetic Dentistry</li>
+              <li>Teeth Whitening</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="program">
-        <div class="program__header"><img class="masthead__image"
-            src="<?php echo get_template_directory_uri() . '/images/';?>program-placeholder.jpg" alt="Healthy Smiles"></div>
-        <div class="program__body">
-          <h3 class="title">Healthy Smiles for Moms and Babies</h3>
-          <p>Both clinics offers dental care to pregnant women who have Medicaid insurance or who have income falling
-            below 200% of the Federal Poverty Guidelines and have no dental insurance, in order that they have good oral
-            health before their babies are born.</p>
-          <p><a href="#" class="button">Learn more</a></p>
-        </div>
-      </div>
-      <div class="program">
-        <div class="program__header"><img class="masthead__image"
-            src="<?php echo get_template_directory_uri() . '/images/';?>program-placeholder-2.jpg" alt="Healthy Smiles"></div>
-        <div class="program__body">
-          <h3 class="title">Head Start Partnership</h3>
-          <p>The clinic's dental team and volunteers provide oral health instructions and federally mandated exams to
-            preschoolers enrolled in the Headstart Program. All children screened at Head Start who are eligible to be
-            seen are directly referred to one of the clinics.</p>
-          <p><a href="#" class="button">Learn more</a></p>
-        </div>
-      </div>
-      <div class="program">
-        <div class="program__header"><img class="masthead__image"
-            src="<?php echo get_template_directory_uri() . '/images/';?>program-placeholder-3.jpg" alt="Healthy Smiles"></div>
-        <div class="program__body">
-          <h3 class="title">Give Kids a Smile Program</h3>
-          <p>The American Dental Association’s annual Give Kids A Smile Program is working to eliminate the silent
-            epidemic of dental disease for the millions of children that can not sleep, eat properly, pay attention in
-            school, or simply smile. We offer this opportunity at our clinics on annually, providing comprehensive
-            dental care to children in need and welcomes them into a new dental home.</p>
-          <p><a href="#" class="button">Learn more</a></p>
+        <div class="column column--is-25">
+          <?php get_template_part('partials/resources'); ?>
         </div>
       </div>
     </div>

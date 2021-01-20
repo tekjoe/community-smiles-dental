@@ -2,8 +2,10 @@
   ul {
     list-style-position: inside;
     font-size: $p;
-    margin-left: 1rem;
+    margin-left: 2rem;
     text-indent: -1rem;
+    margin-bottom: 1rem;
+    list-style-type: disc;
     li ul {
       padding-left: 1rem;
     }
@@ -14,7 +16,9 @@
     line-height: 1.4;
   }
   p + h3,
-  p + h2 {
+  p + h2,
+  ul + h2,
+  ul + h3 {
     margin-top: 2rem;
   }
   h1,

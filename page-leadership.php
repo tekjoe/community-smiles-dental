@@ -56,8 +56,6 @@
       <?php endif; ?>
     </div>
   </div>
-
-
 </section>
 <?php get_template_part('partials/newsletter'); ?>
 <?php get_template_part('partials/featured-posts'); ?>

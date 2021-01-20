@@ -14,7 +14,11 @@
           </div>
           <div class="details">
             <div class="details__title">Sponsor</div>
-            <div class="details__subtitle">View Opportunities</div>
+            <div class="details__subtitle">
+              <?php if (get_field('sponsor_opportunities')): ?>
+              <a href="<?php the_field('sponsor_opportunities'); ?>" download>View Opportunities</a>
+              <?php endif; ?>
+            </div>
           </div>
         </div>
         <div class="masthead-column">
@@ -23,7 +27,11 @@
           </div>
           <div class="details">
             <div class="details__title">The Date</div>
-            <div class="details__subtitle">April 22, 2021</div>
+            <div class="details__subtitle">
+              <?php if (get_field('date')): ?>
+              <?php echo the_field('date'); ?>
+              <?php endif; ?>
+            </div>
           </div>
         </div>
         <div class="masthead-column">
@@ -32,7 +40,9 @@
           </div>
           <div class="details">
             <div class="details__title">Register</div>
-            <div class="details__subtitle">Get your tickets</div>
+            <div class="details__subtitle">
+              <a href="#register">Get your tickets</a>
+            </div>
           </div>
         </div>
       </div>
@@ -51,25 +61,22 @@
               </div>
               <div class="content__body">
                 <p>
-                  In partnership with the Waukesha County Community Dental Clinic (WCCDC) Board of Directors and our
+                  In partnership with the Community Smiles Dental (CSD) Board of Directors and our
                   headliner comedian, Charlie Berens, we've decided to postpone Laugh for a Smile 2020 to Thursday,
                   April 22, 2021 to ensure the most successful and safe event for all involved.
                 </p>
-
                 <p>
                   While the date has changed, the experience has not and we can’t wait to host you as we generate
-                  important dollars for the WCCDC mission!
+                  important dollars for the CSD mission!
                 </p>
-
                 <p><strong>When:</strong> April 22, 2021</p>
-
                 <p><strong>Time:</strong> 5:00 pm – 8:30 pm</p>
-
                 <p><strong>Where:</strong> Brookfield Conference Center</p>
-
                 <p>
                   <strong>Co-Chaired By:</strong> Laura and Mike Arnow, Coreen Dicus-Johnson and Kurt Johnson,Dr.
                   Miranda and Kurt Peter
+                </p>
+                <p><a class="button" href="#register">Get your tickets</a>
                 </p>
               </div>
             </div>
@@ -104,7 +111,10 @@
                   children, pregnant women, special needs patients, and medically-fragile adults in the Greater
                   Milwaukee
                   area.</p>
-                <a href="#" class="button">Read the announcement</a>
+                <?php if (get_field('guest_announcement')): ?>
+                <p><a class="button" href="<?php the_field('guest_announcement'); ?>" download>Read the Announcement</a>
+                </p>
+                <?php endif; ?>
               </div>
             </div>
           </div>
@@ -121,7 +131,10 @@
                 <p>Event sponsorship is available at levels ranging from $10,000 to $500. To learn more about these
                   opportunities, along with the associated marketing and sponsor benefits, please view our sponsorship
                   packet below.</p>
-                <a href="#" class="button">View Sponsorship Opportunities</a>
+                <?php if (get_field('sponsor_opportunities')): ?>
+                <p><a class="button" href="<?php the_field('sponsor_opportunities'); ?>" download>View Sponsor
+                    Opportunities</a></p>
+                <?php endif; ?>
               </div>
             </div>
           </div>
@@ -199,7 +212,6 @@
       </div>
     </div>
   </div>
-
 </section>
 <section id="sponsors">
   <div class="container">
@@ -209,24 +221,20 @@
         <div class="sponsor-grid__title">
           <h4>$5,000 Round of Applause</h4>
         </div>
+        <?php if (have_rows('round_of_applause')): ?>
+        <?php while (have_rows('round_of_applause')): the_row(); ?>
         <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
+          <?php if (get_sub_field('logo')): ?>
+          <a href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer"><img
+              src="<?php the_sub_field('logo'); ?>" alt="Sponsor Image" />
+          </a>
+          <?php else: ?>
+          <span><?php the_sub_field('name'); ?></span>
+          <?php endif; ?>
+
         </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     </div>
     <div class="sponsors">
@@ -234,34 +242,19 @@
         <div class="sponsor-grid__title">
           <h4>$2,500 Knee Slapper</h4>
         </div>
+        <?php if (have_rows('knee_slapper')): ?>
+        <?php while (have_rows('knee_slapper')): the_row(); ?>
         <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
+          <?php if (get_sub_field('logo')): ?>
+          <a href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer"><img
+              src="<?php the_sub_field('logo'); ?>" alt="Sponsor Image" />
+          </a>
+          <?php else: ?>
+          <span><?php the_sub_field('name'); ?></span>
+          <?php endif; ?>
         </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
-        <div class="sponsor">
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>sponsor-image.jpg"
-            alt="Sponsor Image Placeholder" />
-        </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     </div>
     <div class="sponsors">
@@ -269,63 +262,51 @@
         <div class="sponsor-grid__title">
           <h4>$1,000 Giggle</h4>
         </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
+        <?php if (have_rows('giggle')): ?>
+        <?php while (have_rows('giggle')): the_row(); ?>
+        <div class="sponsor">
+          <?php if (get_sub_field('logo')): ?>
+          <a href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer"><img
+              src="<?php the_sub_field('logo'); ?>" alt="Sponsor Image" />
+          </a>
+          <?php else: ?>
+          <span><?php the_sub_field('name'); ?></span>
+          <?php endif; ?>
         </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
+        <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
+    </div>
+    <div class="sponsors">
+      <div class="sponsor-grid sponsor-grid--text-only">
+        <div class="sponsor-grid__title">
+          <h4>$500 Grinnin'</h4>
         </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
+        <?php if (have_rows('grinnin')): ?>
+        <?php while (have_rows('grinnin')): the_row(); ?>
+        <div class="sponsor">
+          <?php if (get_sub_field('logo')): ?>
+          <a href="<?php the_sub_field('link'); ?>" target="_blank" rel="noopener noreferrer"><img
+              src="<?php the_sub_field('logo'); ?>" alt="Sponsor Image" />
+          </a>
+          <?php else: ?>
+          <span><?php the_sub_field('name'); ?></span>
+          <?php endif; ?>
         </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Ellen Rohwer Pappas</span>
-        </div>
-        <div class="sponsor sponsor--text">
-          <span>Laura & Mike Arnow</span>
-        </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>
 </section>
+<?php if (get_field('registration_form')): ?>
+<section id="register">
+  <div class="container">
+    <div class="page-wrapper">
+      <?php echo do_shortcode('[erforms id="'.get_field('registration_form').'"]'); ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
 
 <?php get_footer(); ?>

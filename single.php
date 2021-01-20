@@ -12,7 +12,7 @@
 </section>
 <section>
   <div class="container">
-    <div class="about">
+    <div class="page-wrapper">
       <div class="columns">
         <div class="column column--is-75">
           <div class="text-block">
@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="column column--is-25">
-          <?php get_template_part('partials/social-share'); ?>
+          <?php get_template_part('partials/donate'); ?>
         </div>
       </div>
     </div>

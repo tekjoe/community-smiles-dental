@@ -3,7 +3,7 @@
 <section id="masthead">
   <div class="container">
     <div class="masthead"><img class="masthead__image"
-        src="<?php echo get_template_directory_uri() . '/images/';?>smiling-kid.png"
+        src="<?php echo get_template_directory_uri() . '/images/';?>boy-smiling.jpg"
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title">Community Smiles Dental</h1>

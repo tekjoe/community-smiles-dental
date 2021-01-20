@@ -1,0 +1,109 @@
+.erf-form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  .erf-form-html {
+    grid-column: 1/-1;
+    max-width: 100%;
+    @media (min-width: $md) {
+      grid-column: 3/-3;
+    }
+  }
+  .rendered-form {
+    background: $neutral200;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    .erf-header,
+    .erf-text,
+    .erf-email,
+    .erf-tel,
+    .erf-select,
+    .erf-textarea {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      label {
+        color: $secondary400;
+        font-size: $h6;
+        font-weight: bold;
+      }
+      input {
+        margin-top: 0.5rem;
+        border: none;
+        padding: 1rem;
+        border-radius: 0;
+        width: 100%;
+        font-size: $p;
+      }
+    }
+    .erf-header {
+      color: $secondary400;
+      margin-bottom: 2rem;
+    }
+    .erf-text {
+    }
+    .erf-email {
+    }
+    .erf-tel {
+    }
+    .erf-select {
+      select {
+        margin-top: 0.5rem;
+      }
+    }
+    .erf-textarea {
+      textarea {
+        border: none;
+        resize: vertical;
+        margin-top: 0.5rem;
+      }
+    }
+    .erf-button {
+      button.btn.btn-default {
+        background: $primary500;
+        cursor: pointer;
+        border: none;
+        display: inline-block;
+        color: white;
+        min-width: 100%;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease-in-out;
+        &:hover {
+          background: $primary300;
+        }
+        @media (min-width: $sm) {
+          min-width: 250px;
+        }
+      }
+    }
+    @media (min-width: $sm) {
+      padding: 3rem;
+    }
+  }
+  .erf-external-form-elements {
+    grid-column: 1/-1;
+    max-width: 100%;
+    .erf-errors {
+      padding: 1.5rem;
+      background: $neutral200;
+      font-size: $h6;
+      .erf-errors-head {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        display: block;
+      }
+      .erf-errors-body {
+      }
+      @media (min-width: $sm) {
+        padding: 3rem;
+      }
+    }
+    @media (min-width: $md) {
+      grid-column: 3/-3;
+    }
+  }
+}

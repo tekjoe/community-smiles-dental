@@ -24,6 +24,7 @@
   // Switch to row at >768
   @media (min-width: $xs) {
     flex-direction: row;
+    gap: 1rem;
   }
 }
 
