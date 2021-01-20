@@ -31,6 +31,15 @@
       position: absolute;
       bottom: 3rem;
       left: 0;
+      &--404 {
+        bottom: 25%;
+        left: 25%;
+        text-align: center;
+        width: 50%;
+        p.subtitle {
+          max-width: unset;
+        }
+      }
       .title {
         color: $primary700;
       }

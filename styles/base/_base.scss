@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Mulish";
   src: url("../../community-smiles-dental/fonts/Mulish/Mulish-VariableFont_wght.ttf")
-    format(("truetype"));
+    format(("truetype-variations"));
+  font-variation-settings: normal;
 }
 
 @font-face {

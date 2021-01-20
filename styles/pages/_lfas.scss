@@ -4,7 +4,7 @@
       rgba($primary500, 0.75),
       rgba($primary500, 0.95)
     ),
-    url("../../../../../wp-content/themes/csd/images/lfas-masthead.jpg");
+    url("../../../../../wp-content/themes/community-smiles-dental/images/lfas-masthead.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -201,6 +201,8 @@
   }
 }
 
+// Break out into separate SCSS file
+
 .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -211,6 +213,13 @@
       color: $primary500;
     }
   }
+  &__body {
+    text-align: center;
+    grid-column: 1/-1;
+    p {
+      font-size: 1.25rem;
+    }
+  }
   &--text-only {
     .sponsor.sponsor--text {
       grid-column: span 2;
@@ -219,14 +228,30 @@
     }
   }
   .sponsor {
-    padding: 3rem;
-    grid-column: span 4;
+    padding: 2rem;
+    grid-column: 1/-1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: clamp($h6, 1.5vw, 42px);
     font-weight: bold;
     img {
       height: auto;
       width: 100%;
+    }
+  }
+  @media (min-width: $xs) {
+    .sponsor {
+      grid-column: span 6;
+    }
+    &__body {
+      grid-column: 3/-3;
+    }
+  }
+  @media (min-width: $sm) {
+    .sponsor {
+      grid-column: span 4;
     }
   }
 }

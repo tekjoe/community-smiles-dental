@@ -13,12 +13,13 @@
 </section>
 <section>
   <div class="container">
-    <div class="about">
+    <div class="page-wrapper">
       <div class="columns">
         <div class="column column--is-75">
           <div class="text-block">
             <h2>How Do I know If I Qualify for Help?</h2>
-            <p>Community Smiles Dental provides dental care to children, women who are pregnant, and individuals who have special
+            <p>Community Smiles Dental provides dental care to children, women who are pregnant, and individuals who
+              have special
               health needs(by referral) and who meet these eligibility guidelines:
             </p>
             <ul>

@@ -17,18 +17,16 @@
       <div class="columns columns--has-gap">
         <div class="column">
           <div class="content content--contact">
-            <h2>How Can We Help?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
-              laudantium et magni natus ut a delectus.</p>
-            <h3>Eligibility</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
-              laudantium et magni natus ut a delectus.</p>
-            <h3>Locations</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
-              laudantium et magni natus ut a delectus..</p>
-            <h3>Frequently Asked Questions</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nemo praesentium! Excepturi ipsum,
-              laudantium et magni natus ut a delectus.</p>
+            <h2>General Inquiries</h2>
+            <p>
+              Please contact our main phone number (<a href="tel:262-522-7645">262-522-7645</a>) to learn more about our
+              work, how to get involved,
+              and/or patient eligibility.
+            </p>
+            <h2>Press</h2>
+            <p>For press inquiries, please contact Emily Lukasek at <a href="tel:262-953-4692">262-953-4692</a>.</p>
+            <h2>Other Questions</h2>
+            <p>For any other questions, please use the contact form on this page.</p>
           </div>
         </div>
         <div class="column">

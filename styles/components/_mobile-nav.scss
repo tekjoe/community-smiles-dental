@@ -52,7 +52,8 @@
       }
       .menu-item {
         border-bottom: 2px solid hsl(252, 34%, 53%);
-        a {
+        a,
+        span {
           padding: 1.25rem 1rem;
           display: block;
           font-size: 1.25rem;
@@ -63,6 +64,7 @@
       }
       .sub-menu {
         list-style-type: none;
+        display: none;
         opacity: 0;
         height: 0;
         .menu-item {

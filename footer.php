@@ -33,7 +33,16 @@
         "menu_class" => "nav__links"
         )); ?>
         </div>
-        <div class="footer__legal"><?php the_date('Y', true); ?> &copy; Community Smiles Dental. All Rights Reserved.</div>
+        <div class="footer__legal"><?php the_date('Y'); ?> &copy; Community Smiles Dental. All Rights Reserved.
+        </div>
+      </div>
+      <div class="footer__partners">
+        <div class="partners__header"><a href="https://www.unitedwaygmwc.org/" rel="noopener noreferrer"
+            target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/';?>united-way-logo.jpg"
+              alt="United Way Logo"></a></div>
+        <div class="partners__body">
+          <p>Community Smiles Dental is a proud partner of the United Way of Greater Milwaukee & Waukesha County.</p>
+        </div>
       </div>
     </div>
   </div>

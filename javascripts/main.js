@@ -2,7 +2,7 @@ const $ = jQuery;
 $(() => {
   const closeButton = document.getElementById("close-menu");
   const openButton = document.getElementById("open-menu");
-  const expandButton = document.getElementById("expand-menu");
+  const expandButtons = document.querySelectorAll(".expand-menu");
   const notificationBar = document.getElementById("notification-bar");
 
   const checkForLocalStorage = () => {
@@ -41,21 +41,31 @@ $(() => {
     });
   });
 
-  const subMenu = expandButton.nextElementSibling;
-  const tl = gsap.timeline();
-  tl.reversed(true);
-  tl.to(subMenu, {
-    height: "100%",
-    opacity: 1,
-    duration: 0.33,
-    ease: "power1.in",
+  const timelines = [];
+
+  expandButtons.forEach((button) => {
+    const tl = gsap.timeline();
+    tl.reversed(true);
+    const subMenu = button.nextElementSibling;
+    tl.to(subMenu, {
+      display: "block",
+      height: "100%",
+      opacity: 1,
+      duration: 0.33,
+      ease: "power1.in",
+    });
+    timelines.push(tl);
   });
 
-  const animateMenu = () => {
-    tl.reversed(!tl.reversed());
+  const animateMenu = (index) => {
+    timelines[index].reversed(!timelines[index].reversed());
   };
 
-  expandButton.addEventListener("click", animateMenu);
+  expandButtons.forEach((button, index) =>
+    button.addEventListener("click", () => {
+      animateMenu(index);
+    })
+  );
 
   checkForLocalStorage();
   checkForNotificationBar();

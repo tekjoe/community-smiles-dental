@@ -1,4 +1,6 @@
-.social-share {
+.social-share,
+.donate-snippet {
+  margin: 1rem 0;
   .title {
     font-style: italic;
     font-size: 1.125rem;
@@ -6,7 +8,8 @@
     margin-bottom: 1rem;
     font-weight: bold;
   }
-  .social-list {
+  .social-list,
+  .donate-list {
     list-style-type: none;
     display: flex;
     margin-bottom: 2rem;
@@ -23,6 +26,12 @@
         text-align: center;
         background: white;
         border: 1px solid $primary900;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background: $primary500;
+          border: 1px solid $primary500;
+          color: white;
+        }
       }
     }
     @media (min-width: $sm) {
@@ -41,7 +50,7 @@
   @media (min-width: $sm) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     .title {
       margin-right: 2rem;
     }

@@ -6,20 +6,22 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
+        <p class="subtitle">We believe that everyone deserves a healthy smile</p>
       </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container">
-    <div class="about">
+
+    <div class="page-wrapper">
       <div class="columns">
         <div class="column column--is-75">
           <div class="text-block">
             <h2>Mission</h2>
             <p>Community Smiles Dental improves the lives of the underserved through oral healthcare services,
               preventative education, and advocating for systemic healthcare change - Because
-              everyone deserves a healthy smile.”
+              everyone deserves a healthy smile.
             </p>
             <h2>Vision</h2>
             <p>To create a healthier Community by improving oral health and ensuring that no
@@ -40,7 +42,7 @@
           </div>
         </div>
         <div class="column column--is-25">
-          <?php get_template_part('partials/social-share'); ?>
+          <?php get_template_part('partials/donate'); ?>
         </div>
       </div>
     </div>

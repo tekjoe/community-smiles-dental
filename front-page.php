@@ -38,13 +38,9 @@
     <div class="cta-grid">
       <div class="eligibility">
         <h3>Eligibility</h3>
-        <p>We are currently accepting new patients. Please complete our verification form to learn if you qualify for
+        <p>We are currently accepting new patients. Follow the link below to learn if you qualify for
           our clinic’s services.</p>
-        <form class="input-group">
-          <input type="text" class="input-group__input input-group__input--text" placeholder="ZIP Code"
-            pattern="^\d{5}$" />
-          <button class="input-group__button">Verify</button>
-        </form>
+        <a href="<?php echo site_url('/eligibility'); ?>" class="button button--inverse">Check Eligibility</a>
       </div>
       <div class="donate">
         <h3>Donate</h3>
