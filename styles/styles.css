@@ -1553,6 +1553,8 @@ div.intro h2 {
   border: none;
   resize: vertical;
   margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 16px;
 }
 .erf-form .rendered-form .erf-button button.btn.btn-default {
   background: #46447e;
@@ -2226,7 +2228,7 @@ div.intro h2 {
   background: #edf2f7;
 }
 .sponsor-grid .sponsor img {
-  height: auto;
+  max-height: 200px;
   width: 100%;
 }
 .sponsor-grid--text-only .sponsor {
