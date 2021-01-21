@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Community Smiles Dental improves lives through oral healthcare, education, and systemic healthcare change - Because everyone deserves a healthy smile.">
   <meta name="google-site-verification" content="unjF738_XjXFtmMTNBo9lPB9evKWQkLG6DGIPVwXUeg" />
   <title><?php the_title(); ?> | Community Smiles Dental</title>
   <?php wp_head(); ?>

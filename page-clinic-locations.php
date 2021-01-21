@@ -7,6 +7,7 @@
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
+        <p class="subtitle">We have two clinics conveniently located in Waukesha and Menomonee Falls</p>
       </div>
     </div>
   </div>

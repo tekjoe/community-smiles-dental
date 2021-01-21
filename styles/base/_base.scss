@@ -12,6 +12,16 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../../community-smiles-dental/fonts/Nunito_Sans/NunitoSans-Bold.ttf")
+    format(("truetype"));
+  font-weight: 700;
+}
+
+$title-text: "Mulish", sans-serif;
+$body-text: "Nunito Sans", sans-serif;
+
 @import "./variables";
 @import "./colors";
 @import "./typography";
@@ -24,4 +34,5 @@ html {
 body {
   background: $neutral200;
   color: $primary900;
+  font-family: $body-text;
 }

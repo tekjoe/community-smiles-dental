@@ -28,9 +28,15 @@
     .title {
       font-size: $h3;
     }
+    .subtitle {
+      margin-top: 0.25rem;
+    }
     @media (min-width: $xs) {
       .title {
         font-size: $h2;
+      }
+      .subtitle {
+        font-size: 1.25rem;
       }
     }
     @media (min-width: $md) {
@@ -257,6 +263,7 @@
     img {
       max-height: 200px;
       width: 100%;
+      object-fit: contain;
     }
   }
   &--text-only {

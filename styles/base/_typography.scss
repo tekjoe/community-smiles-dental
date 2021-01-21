@@ -1,6 +1,3 @@
-$title-text: "Mulish", sans-serif;
-$body-text: "Nunito Sans", sans-serif;
-
 // Scale 1.250 – Major Third
 $h1: 54.93px;
 $h2: 43.95px;
@@ -25,6 +22,7 @@ $headings: (
     line-height: 1.1;
     font-size: $size;
     font-family: $title-text;
+    font-variation-settings: "wght" 700;
   }
 }
 
@@ -35,6 +33,7 @@ body {
 p {
   font-size: $p;
   margin-bottom: $p;
+  font-variation-settings: "wght" 400;
   @media (min-width: $md) {
     font-size: $h6;
   }
