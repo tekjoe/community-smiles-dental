@@ -64,3 +64,11 @@
     flex-basis: 25%;
   }
 }
+
+.grid {
+  display: grid;
+  @media (min-width: $xs) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  gap: 2rem;
+}
