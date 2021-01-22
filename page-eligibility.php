@@ -41,7 +41,6 @@
     </div>
   </div>
 </section>
-
 <?php get_template_part('partials/newsletter'); ?>
 <?php get_template_part('partials/featured-posts'); ?>
 <?php get_footer(); ?>

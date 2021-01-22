@@ -6,6 +6,7 @@
         alt="Community Smiles Dental Programs">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
+        <p class="subtitle">These are our most frequently asked questions</p>
       </div>
     </div>
   </div>
@@ -16,7 +17,7 @@
       <div class="columns">
         <div class="column column--is-75">
           <div class="text-block">
-            <h2>Patient Forms</h2>
+            <h2>Are there patient forms I can fill out before my visit?</h2>
             <ul>
               <?php if (have_rows('patient_forms')): ?>
               <?php while (have_rows('patient_forms')): the_row();
@@ -30,7 +31,7 @@
               <?php endwhile; ?>
               <?php endif; ?>
             </ul>
-            <h2>Referrals</h2>
+            <h2>What is the referral process?</h2>
             <p>
             <ul>
               <li>
@@ -48,7 +49,7 @@
             </ul>
             </p>
 
-            <h2>Snow Day Policy</h2>
+            <h2>What is your Snow Day policy?</h2>
             <p>Our clinic policy is to cancel clinic for the day when the Waukesha Public Schools and Menomonee Falls
               Public Schools close due to inclement winter weather. If your child has an appointment and school is
               cancelled for the day, please note that your child's dental appointment will also be cancelled. We will
@@ -57,7 +58,7 @@
               clinic is closed by visiting our <a href="https://www.facebook.com/WCCDC/" rel="noopener norefferer"
                 target="_blank">Facebook page</a>, looking for us on your local news TV station snow closing listing OR
               by calling and our clinic voicemail will confirm our closing for you.</p>
-            <h2>COVID-19 Response</h2>
+            <h2>How has COVID 19 impacted Community Smiles Dental?</h2>
             <p>You may see some changes when it is time for your next appointment. For example:</p>
             <ul>
               <li>We will call you before your appointment to ask some screening questions. You’ll be asked the same

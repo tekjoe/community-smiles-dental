@@ -2291,12 +2291,14 @@ div.intro h2 {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 1rem;
 }
 .job-listing .job-summary > * {
   margin-bottom: 1rem;
 }
 .job-listing .job-summary h2.job-title {
   font-size: 22.5px;
+  max-width: 25ch;
 }
 .job-listing .job-summary .status,
 .job-listing .job-summary .read-more {
@@ -2305,6 +2307,7 @@ div.intro h2 {
 .job-listing .job-summary .status {
   display: flex;
   flex-direction: column;
+  max-width: 30ch;
 }
 .job-listing .job-summary .status span {
   display: block;
