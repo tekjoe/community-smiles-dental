@@ -6,11 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="unjF738_XjXFtmMTNBo9lPB9evKWQkLG6DGIPVwXUeg" />
   <title><?php the_title(); ?> | Community Smiles Dental</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128811382-3"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128811382-3');
+  </script>
+
   <?php wp_head(); ?>
 </head>
 
 <body>
-  <?php get_template_part('partials/notification-bar'); ?>
+
   <header>
     <div class="container">
       <div class="header">

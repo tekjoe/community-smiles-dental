@@ -31,12 +31,17 @@
         </div>
         <div class="column">
           <div class="content content--contact">
-            <h2>Send Us A Message</h2>
-            <?php if (get_field('contact_form', 'option')): ?>
-            <?php echo do_shortcode('[contact-form-7 id="'.get_field('contact_form', 'option').' title="Contact Form"]'); ?>
-            <?php else: ?>
-            <span></span>
-            <?php endif; ?>
+            <h2>Waukesha Clinic</h2>
+            <div class="address"><span>210 NW Barstow Street</span>
+              <span>Suite 305 Waukesha, WI 53188</span>
+              <span><a href="tel:2625227645">(262) 522-7645</a></span>
+            </div>
+            <h2>Menomonee Falls Clinic</h2>
+            <div class="address">
+              <span>N81 W15062 Appleton Avenue</span>
+              <span>Menomonee Falls, WI 53051</span>
+              <span><a href="tel:2625227645">(262) 522-7645</a></span>
+            </div>
           </div>
         </div>
       </div>

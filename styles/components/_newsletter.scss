@@ -36,18 +36,19 @@
         margin-bottom: 1rem;
         font-weight: bold;
         color: white;
+        border-radius: 0;
       }
     }
     p.ctct-form-field-submit {
       input.ctct-submit {
         width: 100%;
         border: none;
-        border-radius: none;
+        border-radius: 0;
         -webkit-appearance: none;
         -moz-appearance: none;
         padding: 1rem 2rem;
         background: white;
-        color: hsl(243, 31%, 52%);
+        color: $primary500;
         font-family: inherit;
         font-weight: bold;
         cursor: pointer;

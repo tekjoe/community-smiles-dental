@@ -18,9 +18,14 @@
       <div class="columns">
         <div class="column column--is-75">
           <div class="text-block">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/YeZN8lTcij4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
             <h2>Mission</h2>
             <p>Community Smiles Dental improves the lives of the underserved through oral healthcare services,
-              preventative education, and advocating for systemic healthcare change - Because
+              preventive education, and advocating for systemic healthcare change - Because
               everyone deserves a healthy smile.
             </p>
             <h2>Vision</h2>

@@ -35,19 +35,20 @@
       list-style-position: inside;
       .menu-item-has-children {
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
         .expand-menu {
-          position: absolute;
           color: white;
           font-size: 1.5rem;
           font-weight: bold;
           cursor: pointer;
-          top: 0;
-          right: 0;
-          padding: 1.5rem;
-          height: 70px;
-          display: block;
+          padding: 1rem;
           border-left: 2px solid hsl(252, 34%, 53%);
           line-height: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
         }
       }
       .menu-item {
@@ -56,10 +57,12 @@
         span {
           padding: 1.25rem 1rem;
           display: block;
-          font-size: 1.25rem;
+          font-size: 1.125rem;
+          letter-spacing: 0.5px;
           color: white;
           font-weight: bold;
           text-decoration: none;
+          flex: 4;
         }
       }
       .sub-menu {
@@ -67,10 +70,14 @@
         display: none;
         opacity: 0;
         height: 0;
+        flex: 1;
+        flex-basis: 100%;
         .menu-item {
           border-bottom: none;
           background: $secondary200;
           border-bottom: 2px solid hsl(252, 34%, 53%);
+          z-index: 200;
+          position: relative;
           &:first-of-type {
             border-top: 2px solid hsl(252, 34%, 53%);
           }

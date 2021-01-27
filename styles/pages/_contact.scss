@@ -34,6 +34,18 @@
     p:last-of-type {
       margin-bottom: 0;
     }
+    .address {
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+      span {
+        display: block;
+        font-size: $p;
+        @media (min-width: $xs) {
+          font-size: $h6;
+        }
+      }
+    }
   }
   @media (min-width: 768px) {
     padding: 2rem;

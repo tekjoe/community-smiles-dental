@@ -37,7 +37,7 @@ function wpdocs_custom_excerpt_length($length)
 
 function community_smiles_setup()
 {
-    wp_enqueue_style('styles', get_theme_file_uri('/styles/styles.css'), microtime());
+    wp_enqueue_style('styles', get_theme_file_uri('/styles/styles.css'), array(), wp_get_theme()->get('Version'), 'all');
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.js');
     wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js');
     wp_enqueue_script('main-js', get_template_directory_uri() . '/javascripts/main.js');

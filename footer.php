@@ -13,7 +13,7 @@
             <div class="location__address">
               <span>210 NW Barstow Street, Suite 305</span>
               <span>Waukesha, WI 53188</span>
-              <span>(262) 522-7645</span>
+              <span><a href="tel:2625227645">(262) 522-7645</a></span>
             </div>
           </div>
           <div class="location">
@@ -21,7 +21,7 @@
             <div class="location__address">
               <span>N81 W15062 Appleton Avenue</span>
               <span>Menomonee Falls, WI 53051</span>
-              <span>(262) 522-7645</span>
+              <span><a href="tel:2625227645">(262) 522-7645</a></span>
             </div>
           </div>
         </div>
@@ -47,6 +47,7 @@
     </div>
   </div>
 </footer>
+<?php get_template_part('partials/notification-bar'); ?>
 </body>
 
 </html>

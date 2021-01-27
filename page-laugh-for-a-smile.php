@@ -216,7 +216,7 @@
 <section id="sponsors">
   <div class="container">
     <div class="sponsors">
-      <h3 class="sponsors__title">2020 Sponsors</h3>
+      <h3 class="sponsors__title">Sponsors</h3>
       <div class="sponsor-grid">
         <div class="sponsor-grid__title">
           <h4>$5,000 Round of Applause</h4>

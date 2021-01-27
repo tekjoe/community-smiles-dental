@@ -21,7 +21,7 @@
             <p>At our <strong>Community Smiles Dental</strong> clinics, we strive to provide access to affordable and
               quality dental care to individuals throughout our communities. Our dental clinics are designed and created
               with your oral health in mind and are staffed with skilled, caring and dedicated professionals committed
-              to providing a positive and healthy dental experience. </p>
+              to providing a positive and healthy dental experience.</p>
             <p>Dental care for children is the core of what we do!</p>
             <h2>
               Services we provide for children
@@ -40,7 +40,7 @@
             <h2>Services we provide for adults</h2>
             <p>Community Smiles Dental provides dental treatment limited to comprehensive exams, dental cleanings,
               simple restorations, and simple extractions at our Menomonee Falls clinic. Please call 262-522-7645 ext.
-              2291 to discuss program eligibility. </p>
+              2291 to discuss program eligibility.</p>
             <p>Adults who are experiencing pain or a dental emergency can be seen for a limited oral exam at our
               Waukesha Clinic or our Menomonee Falls clinic. We have limited availability for emergency appointments
               each day. Please call 262-522-7645 to schedule an appointment.
@@ -57,20 +57,18 @@
               <li>Partials or Dentures</li>
             </ul>
             <h2>How Do I know If I Qualify for Help?</h2>
-            <p>Community Smiles Dental provides dental care to children, women who are pregnant, and individuals who
-              have special
-              health needs(by referral) and who meet these eligibility guidelines:
+            <p>Community Smiles Dental provides dental care to individuals who meet these eligibility guidelines:
             </p>
             <ul>
-              <li>Be currently enrolled in BadgerCare/Medicaid.</li>
-              <li>Have income that falls below 200% of the Federal Poverty Guidelines and has no dental insurance.<ul>
-                  <li>Patients without insurance pay copays for the initial exam and cleaning.
-                  </li>
-                  <li>WCCDC accepts credit or debit cards only.</li>
-                </ul>
+              <li>Have BadgerCare/Forward Health/Medicaid insurance OR</li>
+              <li>Have income that falls below 200% of the Federal Poverty Guidelines and who are uninsured.
               </li>
-              <li>For more information please call 262-522-7645</li>
             </ul>
+            <p>For patients without dental insurance, a discounted fee/copay is required.</p>
+            <p>A credit card or debit card for payment is preferred.
+            </p>
+            <p>Call 262-522-7645 to see if you are eligible for an appointment.
+            </p>
           </div>
         </div>
         <div class="column column--is-25">
