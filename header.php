@@ -32,7 +32,7 @@
             <p class="tagline">caring. serving. advocating</p>
           </div>
           <div class="right">
-            <div class="social"></div>
+            <div class="call"><a href="tel:2625227645">(262) 522-7645</a></div>
             <a href="https://forms.donorsnap.com/form?id=c0f77fce-51df-4101-b726-ad789c2a24b4" class="donate"
               target="_blank" rel="noreferrer noopener">Donate</a>
           </div>

@@ -9,4 +9,5 @@
               "walker" => new CSD_Menu_Walker()
     )); ?>
   </nav>
+  <div class="call"><a href="tel:2625227645">Call for an Appointment</a></div>
 </div>

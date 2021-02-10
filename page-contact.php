@@ -40,7 +40,7 @@
             <div class="address">
               <span>N81 W15062 Appleton Avenue</span>
               <span>Menomonee Falls, WI 53051</span>
-              <span><a href="tel:2625227645">(262) 522-7645</a></span>
+              <span><a href="tel:2625227645,2280">(262) 522-7645 ext. 2280</a></span>
             </div>
           </div>
         </div>

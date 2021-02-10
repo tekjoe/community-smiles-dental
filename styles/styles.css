@@ -541,6 +541,17 @@ body {
 }
 .header__top .right {
   margin-left: auto;
+  display: flex;
+}
+.header__top .right .call {
+  font-weight: 600;
+  background: #625fab;
+}
+.header__top .right .call a {
+  padding: 1rem 3rem;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 .header__top .right .donate {
   background: #8a83be;
@@ -1436,6 +1447,9 @@ div.intro h2 {
 
 .mobile-nav {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   width: 260px;
   background: #8275bd;
@@ -1443,6 +1457,20 @@ div.intro h2 {
   z-index: 100;
   right: -260px;
   overflow-x: scroll;
+}
+.mobile-nav .call {
+  width: 100%;
+  background: #625fab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-nav .call a {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
 }
 .mobile-nav nav .mobile-nav__links {
   list-style-type: none;
