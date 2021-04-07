@@ -2,16 +2,16 @@
   <div class="container">
     <div class="blog-grid">
       <?php
-      $featured_posts = new WP_Query(array('post_type' => "post"));
+      $featured_posts = new WP_Query(array('post_type' => "post", 'posts_per_page' => 3, 'has_password' => false));
       if ($featured_posts->have_posts()):
         while ($featured_posts->have_posts()): $featured_posts->the_post();
         ?>
       <div class="card">
         <div class="card__header">
           <?php if (has_post_thumbnail()): ?>
-          <?php the_post_thumbnail('medium_large') ?>
+          <?php the_post_thumbnail('medium_large'); ?>
           <?php else: ?>
-          <img src="<?php echo get_template_directory_uri() . '/images/';?>blog-post-placeholder.jpg"
+          <img src="<?php echo get_template_directory_uri() . '/images/'; ?>blog-post-placeholder.jpg"
             alt="Community Smiles Dental Logo" class="feature__image" />
           <?php endif; ?>
         </div>

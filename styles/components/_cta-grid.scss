@@ -44,6 +44,12 @@
       grid-column: 7 / -1;
       grid-row: 1/-1;
     }
+    @media (min-width: $lg) {
+      img {
+        max-height: 640px;
+        object-position: 0 25%;
+      }
+    }
   }
 }
 

@@ -34,18 +34,16 @@
             <h2>What is the referral process?</h2>
             <p>
             <ul>
-              <li>
-                Please complete the <?php if (get_field('referral_form')): ?>
+              <li>Please complete the <?php if (get_field('referral_form')): ?>
                 <a href="<?php the_field('referral_form'); ?>" download>Agency Referral Form.</a>
-                <?php endif; ?></a> Provide as much information about the patient
-                as possible.
+                <?php endif; ?></a> Provide as much information about the patient as possible.
               </li>
-              <li>Fax referral form to Community Dental Health Coordinator. FAX NUMBER 262-522-2828.
+              <li>Fax referral form to FAX NUMBER 262-522-2828.
               </li>
-              <li>For all questions pertaining to a referral, please call 262-522-7645, ext. 2250
+              <li>For all questions pertaining to a referral, please call 262-522-7645, ext. 2250.
               </li>
-              <li>Patients will be scheduled for appointments by the Community Dental Health Coordinator after
-                eligibility is confirmed.</li>
+              <li>Patients will be scheduled for appointments by the Community Smiles Dental staff after eligibility is
+                confirmed.</li>
             </ul>
             </p>
 

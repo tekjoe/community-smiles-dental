@@ -26,7 +26,8 @@
     flex-direction: column;
     p.ctct-form-field {
       margin: 0;
-      input.ctct-email {
+      input.ctct-email,
+      input.ctct-text {
         width: 100%;
         padding: 1rem;
         background: transparent;
@@ -57,22 +58,22 @@
   }
   @media (min-width: $md) {
     form.ctct-form {
-      flex-direction: row;
+      // flex-direction: row;
       p.ctct-form-field {
         flex: 2;
         input.ctct-email {
-          margin-bottom: 0;
-          border-left: 2px solid white;
-          border-top: 2px solid white;
-          border-bottom: 2px solid white;
-          border-right: none;
+          // margin-bottom: 0;
+          // border-left: 2px solid white;
+          // border-top: 2px solid white;
+          // border-bottom: 2px solid white;
+          // border-right: none;
         }
       }
       p.ctct-form-field-submit {
         flex: 1;
         input.ctct-submit {
           height: 100%;
-          padding: 0.5rem 2rem;
+          // padding: 0.5rem 2rem;
         }
       }
     }

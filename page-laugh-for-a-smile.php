@@ -73,10 +73,12 @@
                 <p><strong>Time:</strong> 5:00 pm – 8:30 pm</p>
                 <p><strong>Where:</strong> Brookfield Conference Center</p>
                 <p>
-                  <strong>Co-Chaired By:</strong> Laura and Mike Arnow, Coreen Dicus-Johnson and Kurt Johnson,Dr.
+                  <strong>Co-Chaired By:</strong> Laura and Mike Arnow, Coreen Dicus-Johnson and Kurt Johnson, Dr.
                   Miranda and Kurt Peter
                 </p>
                 <p><a class="button" href="#register">Get your tickets</a>
+                <p><a class="button" href="https://forms.donorsnap.com/form?id=c0f77fce-51df-4101-b726-ad789c2a24b4"
+                    target="_blank">Donate to the Event</a>
                 </p>
               </div>
             </div>
@@ -84,7 +86,8 @@
           <div class="column">
             <div class="content content--centered">
               <div class="content__image"><img
-                  src="<?php echo get_template_directory_uri() . '/images/';?>lfas-save.jpg" alt="Save the Date" />
+                  src="<?php echo get_template_directory_uri() . '/images/';?>csd-lfas-combined.png"
+                  alt="Save the Date" />
               </div>
             </div>
           </div>
@@ -141,7 +144,7 @@
           <div class="column">
             <div class="content content--centered">
               <div class="content__image content__image--contain"><img
-                  src="<?php echo get_template_directory_uri() . '/images/';?>lfas-logo.jpg"
+                  src="<?php echo get_template_directory_uri() . '/images/';?>lfas-logo-full-color.jpg"
                   alt="Laugh for a Smile Logo" /></div>
             </div>
           </div>
@@ -299,14 +302,71 @@
     </div>
   </div>
 </section>
-<?php if (get_field('registration_form')): ?>
-<section id="register">
+<section?>
   <div class="container">
     <div class="page-wrapper">
-      <?php echo do_shortcode('[erforms id="'.get_field('registration_form').'"]'); ?>
+      <div class="columns">
+        <div class="column ">
+          <div class="text-block">
+            <h4>Additional Sponsors</h4>
+            <p><strong>Dental Student Sponsors:</strong></p>
+            <p>
+            <ul>
+              <li>Karin & Mark Kultgen</li>
+              <li>David Uihlein </li>
+            </ul>
+            </p>
+            <p><strong>Guest Favor Sponsor</strong></p>
+            <p>
+            <ul>
+              <li>Lydia Line</li>
+
+            </ul>
+            <p><img src="<?php echo get_template_directory_uri() . '/images/';?>lydia-line.jpg" alt="Lydia Line Logo"
+                style="width:50%;" />
+            </p>
+            </p>
+            <p><strong>Photo Booth Sponsor:</strong></p>
+            <ul>
+              <li>Network Health</li>
+            </ul>
+            <p><img src="<?php echo get_template_directory_uri() . '/images/';?>network-health.png"
+                alt="Network health Logo" style="width:50%;" />
+            </p>
+            <p><strong>Tooth Fairy Sponsor:</strong></p>
+            <ul>
+              <li>Deb & Jim Jilbert</li>
+            </ul>
+            <p>We are thrilled to introduce a new Laugh for a Smile logo this year, generously designed and donated by
+              Ampersand.</p>
+            <p><img src="<?php echo get_template_directory_uri() . '/images/';?>ampersand.jpg" alt="Ampersand Logo B&W"
+                style="width:50%;" /></p>
+            <p>In-kind support with this evening’s AV and technology was also provided by Exciting Events.</p>
+            <p><img src="<?php echo get_template_directory_uri() . '/images/';?>exciting-events.jpg"
+                alt="Exciting Events Logo" style="width:50%;" /></p>
+            <p>Community Smiles Dental is a 501(c)(3) non-profit whose mission is to improve the lives of the
+              underserved
+              through oral healthcare services, preventive education, and advocating for systemic healthcare change -
+              Because everyone deserves a healthy smile. Nearly 4,000 patients, most of whom are children, are provided
+              vital dental care each year.</p>
+            <p>Community Smiles Dental is proud and grateful to receive generous support from the United Way of Greater
+              Milwaukee and Waukesha County.</p>
+            <p><img src="<?php echo get_template_directory_uri() . '/images/';?>united-way-logo.jpg"
+                alt="United Way Logo" style="width:50%;" /></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-<?php endif; ?>
+  </section>
+  <?php if (get_field('registration_form')): ?>
+  <section id="register">
+    <div class="container">
+      <div class="page-wrapper">
+        <?php echo do_shortcode('[erforms id="'.get_field('registration_form').'"]'); ?>
+      </div>
+    </div>
+  </section>
+  <?php endif; ?>
 
-<?php get_footer(); ?>
+  <?php get_footer(); ?>

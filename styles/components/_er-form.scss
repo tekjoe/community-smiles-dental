@@ -1,3 +1,15 @@
+.erf-content-above {
+  padding: 2rem;
+  margin: 2rem auto;
+  font-weight: bold;
+  background: $neutral200;
+  @media (min-width: $sm) {
+    width: 66%;
+  }
+  @media (min-width: $md) {
+    padding: 3rem;
+  }
+}
 .erf-form {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

@@ -16,12 +16,14 @@ $(document).ready(() => {
 
   L.marker([43.165254, -88.096789])
     .addTo(map)
-    .bindPopup("Menomonee Falls Location");
+    .bindPopup(
+      "<div style='text-align: center;'><p style='margin: 0;'>Menomonee Falls Clinic</p><p style='margin: 0;'><a href='https://goo.gl/maps/5htAYemuBBeX4qRZA' target='_blank'>Get Directions</a></p></div>"
+    );
 
   L.marker([43.014574, -88.232308])
     .addTo(map)
     .bindPopup(
-      "<a href='https://goo.gl/maps/EmmywzwMRDiQo7ku5' target='_blank'>Get Directions</a>"
+      "<div style='text-align: center;'><p style='margin: 0;'>Waukesha Clinic</p><p style='margin: 0;'><a href='https://goo.gl/maps/EmmywzwMRDiQo7ku5' target='_blank'>Get Directions</a></p></div>"
     );
 
   const flyToLocation = (event) => {

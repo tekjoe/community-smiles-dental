@@ -2,7 +2,7 @@
 <section id="masthead">
   <div class="container">
     <div class="masthead"><img class="masthead__image"
-        src="<?php echo get_template_directory_uri() . '/images/';?>about-masthead.png"
+        src="<?php echo get_template_directory_uri() . '/images/';?>csd-staff.jpg"
         alt="Community Smiles Dental Programs">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>
@@ -14,6 +14,17 @@
 <section>
   <div class="container">
     <div class="page-wrapper">
+      <div class="columns">
+        <div class="column column--is-75">
+          <div class="text-block">
+            <p>We are always interested in meeting individuals who want to learn more about our mission and how to join
+              our team. Contact Elizabeth Sheehan, Director of Operations, at <a
+                href="mailto:esheehan@communitysmiles.org">esheehan@communitysmiles.org</a> to learn
+              more.
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="columns">
         <div class="column grid">
           <?php if (have_rows('job_opportunities')): ?>

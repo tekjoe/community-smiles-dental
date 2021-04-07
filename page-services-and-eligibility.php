@@ -2,7 +2,7 @@
 <section id="masthead">
   <div class="container">
     <div class="masthead"><img class="masthead__image"
-        src="<?php echo get_template_directory_uri() . '/images/';?>about-masthead.png"
+        src="<?php echo get_template_directory_uri() . '/images/';?>two-girls-smiling.jpg"
         alt="Community Smiles Dental Programs">
       <div class="masthead__overlay">
         <h1 class="title"><?php echo get_the_title(); ?></h1>

@@ -3,7 +3,7 @@
 <section id="masthead">
   <div class="container">
     <div class="masthead"><img class="masthead__image"
-        src="<?php echo get_template_directory_uri() . '/images/';?>boy-smiling.jpg"
+        src="<?php echo get_template_directory_uri() . '/images/';?>young-boy-smiling.jpg"
         alt="Young child smiling at dentist">
       <div class="masthead__overlay">
         <h1 class="title">Community Smiles Dental</h1>
@@ -48,8 +48,8 @@
         <a href="https://forms.donorsnap.com/form?id=c0f77fce-51df-4101-b726-ad789c2a24b4"
           class="button button--inverse" target="_blank" rel="noreferrer noopener">Donate</a>
       </div>
-      <div class="image"><img src="<?php echo get_template_directory_uri() . '/images/';?>smiling-girl.png"
-          alt="Smiling Girl"></div>
+      <div class="image"><img src="<?php echo get_template_directory_uri() . '/images/';?>young-girl-smiling.jpg"
+          alt="Young girl smiling"></div>
     </div>
   </div>
 </section>
