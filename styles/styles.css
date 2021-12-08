@@ -2310,6 +2310,14 @@ div.intro h2 {
   }
 }
 
+.gallery #primary-slider {
+  margin-bottom: 1rem;
+}
+.gallery > .container {
+  padding: 4rem 2rem;
+  background: white;
+}
+
 .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

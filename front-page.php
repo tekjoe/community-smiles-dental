@@ -8,7 +8,7 @@
       <div class="masthead__overlay">
         <h1 class="title">Community Smiles Dental</h1>
         <p class="subtitle">Strengthening smiles. Strengthening community.</p>
-        <a href="<?php echo site_url('/eligibility'); ?>" class="button button--primary">Learn More</a>
+        <a href="<?php echo site_url('/services-and-eligibility'); ?>" class="button button--primary">Learn More</a>
       </div>
     </div>
   </div>
@@ -40,7 +40,8 @@
         <h3>Eligibility</h3>
         <p>We are currently accepting new patients. Follow the link below to learn if you qualify for
           our clinic’s services.</p>
-        <a href="<?php echo site_url('/eligibility'); ?>" class="button button--inverse">Check Eligibility</a>
+        <a href="<?php echo site_url('/services-and-eligibility'); ?>" class="button button--inverse">Check
+          Eligibility</a>
       </div>
       <div class="donate">
         <h3>Donate</h3>

@@ -34,8 +34,8 @@
             <h2>What is the referral process?</h2>
             <p>
             <ul>
-              <li>Please complete the <?php if (get_field('referral_form')): ?>
-                <a href="<?php the_field('referral_form'); ?>" download>Agency Referral Form.</a>
+              <li>Please complete the <?php if (get_field('_agency_referral_form')): ?>
+                <a href="<?php the_field('agency_referral_form'); ?>" download>Agency Referral Form.</a>
                 <?php endif; ?></a> Provide as much information about the patient as possible.
               </li>
               <li>Fax referral form to FAX NUMBER 262-522-2828.
@@ -44,6 +44,10 @@
               </li>
               <li>Patients will be scheduled for appointments by the Community Smiles Dental staff after eligibility is
                 confirmed.</li>
+              <li>OB/GYN medical providers should use our <?php if (get_field('obgyn_referral_form')): ?>
+                <a href="<?php the_field('obgyn_referral_form'); ?>" download>OB/GYN Referral Form.</a>
+                <?php endif; ?></a> to refer pregnant patients to our clinics
+              </li>
             </ul>
             </p>
 

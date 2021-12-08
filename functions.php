@@ -46,9 +46,13 @@ function community_smiles_setup()
         wp_enqueue_script('leaflet-js', "https://unpkg.com/leaflet@1.7.1/dist/leaflet.js");
         wp_enqueue_script('map-js', get_theme_file_uri('/javascripts/map.js'));
     }
-    // if (is_page("laugh-for-a-smile")) {
-    //     wp_enqueue_script('registration-js', get_theme_file_uri('/javascripts/registration.js'));
-    // }
+    if (is_page("laugh-for-a-smile")) {
+        wp_enqueue_style('splide', get_theme_file_uri('/styles/splide/splide.min.css'));
+        wp_enqueue_style('splide-default', get_theme_file_uri('/styles/splide/splide-default.min.css'));
+        wp_enqueue_script('splide-min', get_template_directory_uri() . '/javascripts/splide.min.js');
+        wp_enqueue_script('splide-js', get_template_directory_uri() . '/javascripts/lfas.js');
+        ;
+    }
 }
 
 function register_menus()

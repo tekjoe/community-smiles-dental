@@ -224,6 +224,16 @@
   }
 }
 
+.gallery {
+  #primary-slider {
+    margin-bottom: 1rem;
+  }
+  & > .container {
+    padding: 4rem 2rem;
+    background: white;
+  }
+}
+
 // Break out into separate SCSS file
 
 .sponsor-grid {
